@@ -95,36 +95,25 @@ header .fa-chevron-down{
 /** main settings */
 
 /** skills */
-main .skills .container-fluid{
+
+.skills{
     background-color: #DDD;
-    min-height: 100vh;
-    /* height: 1320px; */
 }
 main .skills h3{
     color: #6667AA;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
-/* left block */
-main .skills #left-block{
-    height: 540px;
-    border-radius: 50px;
-    background: #DDDDDD;
-    box-shadow:  25px 25px 50px #bcbcbc,
-                -25px -25px 50px #fefefe;
+main .skills .logo-container{
+    height: 180px;
+    width: 140px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+background: #DDDDDD;
+box-shadow:  20px 20px 60px #bcbcbc,
+            -20px -20px 60px #fefefe;
 }
-main .skills #right-block{
-    height: 540px;
-    border-radius: 50px;
-    background: #DDDDDD;
-    box-shadow:  25px 25px 50px #bcbcbc,
-                -25px -25px 50px #fefefe;
-}
-
-
-
-/** profesionnal experiences */
-main .proexp .container{
-    min-height: 100vh;
-    background-color: #212529;
-}
+#logorsz{
+    height: 80px;
+    width: 80px;
+} */

@@ -116,4 +116,24 @@ box-shadow:  20px 20px 60px #bcbcbc,
 #logorsz{
     height: 80px;
     width: 80px;
+} 
+
+
+
+
+/*? test de photo de profil */
+/* #phototest{
+    border-radius: 30px;
+    height: 400px;
 } */
+
+.phototestcontainer{
+    height: 300px;
+    width: 450px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* border: 2px solid black; */
+    background-image: url('/public/assets/img/profile-picture-kevin-lavenant.jpg');
+    background-position: center;
+    background-size: cover;
+}

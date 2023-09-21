@@ -110,8 +110,10 @@ main .skills .logo-container{
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 background: #DDDDDD;
-box-shadow:  20px 20px 60px #bcbcbc,
-            -20px -20px 60px #fefefe;
+box-shadow:  /* 20px 20px 60px #bcbcbc,
+            -20px -20px 60px #fefefe; */
+            5px 5px 20px #bcbcbc,
+            -5px -5px 20px #fefefe;
 }
 #logorsz{
     height: 80px;

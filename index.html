@@ -37,7 +37,7 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link bclr " aria-current="page" href="#">Mon profil</a>
+                            <a class="nav-link bclr" aria-current="page" href="#">Mon profil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link bclr" href="#">Compétences</a>
@@ -46,13 +46,13 @@
                             <a class="nav-link bclr" href="#">Expériences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr ">Diplômes</a>
+                            <a class="nav-link bclr" href="#" >Diplômes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr ">Portfolio</a>
+                            <a class="nav-link bclr" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr ">Recommandations</a>
+                            <a class="nav-link bclr" href="#">Recommandations</a>
                         </li>
                         </ul>
                     </div>
@@ -98,11 +98,27 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo HTML -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5"> 
+                <div class="modal fade" id="htmlmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#htmlmodal">
                     <i class="fa-brands fa-html5 fa-5x" style="color: #de4a26;"></i> 
                 </div> 
             </div>
+            <!-- logo CSS -->
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
                 <div class="logo-container d-flex align-items-center justify-content-center"> 
                     <i class="fa-brands fa-css3-alt fa-5x" style="color: #304bde;"></i> 
@@ -156,9 +172,8 @@
 
 
 <!--? test de photo de profil -->
-<div class="phototestcontainer">
-    <!-- <img id="phototest" src="/public/assets/img/profile-picture-kevin-lavenant.jpg" alt=""> -->
-</div>div
+<!-- <div class="phototestcontainer">
+</div>div -->
 
 
 

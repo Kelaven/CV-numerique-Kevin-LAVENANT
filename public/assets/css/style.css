@@ -109,33 +109,40 @@ main .skills .logo-container{
     width: 140px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-background: #DDDDDD;
-box-shadow:  /* 20px 20px 60px #bcbcbc,
+    background: #DDDDDD;
+    box-shadow:  /* 20px 20px 60px #bcbcbc,
             -20px -20px 60px #fefefe; */
             5px 5px 20px #bcbcbc,
             -5px -5px 20px #fefefe;
+    transition: transform .5s;
+    cursor: url("/public/assets/img/icon-zoom-in.png"), zoom-in;
+}
+main .skills .logo-container:hover{
+    transform: scale(1.1);
 }
 #logorsz{
     height: 80px;
     width: 80px;
-} 
+}
+main .skills #htmlmodal .modal-content{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+main .skills #htmlmodal .btn-close{
+    float: right;
+}
 
 
 
 
 /*? test de photo de profil */
-/* #phototest{
-    border-radius: 30px;
-    height: 400px;
-} */
-
-.phototestcontainer{
+/* .phototestcontainer{
     height: 300px;
     width: 450px;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    /* border: 2px solid black; */
     background-image: url('/public/assets/img/profile-picture-kevin-lavenant.jpg');
     background-position: center;
     background-size: cover;
-}
+} */

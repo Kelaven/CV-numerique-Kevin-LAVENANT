@@ -26,33 +26,33 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col p-0">
-                <nav class="navbar navbar-expand-md sticky-top d-flex p-3">
+                <nav class="navbar navbar-expand-md sticky-top d-flex p-3 navbar__dividingline">
                     <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <!-- id to change border color -->
-                    <button class="navbar-toggler" id="borderbclr" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler navbar__menulogo--border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- my menu logo -->
-                    <span><i class="fa-solid fa-bars fa-xl"></i></span>
+                    <span><i class="fa-solid fa-bars fa-xl navbar__menulogo"></i></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link bclr" aria-current="page" href="#">Mon profil</a>
+                            <a class="nav-link navbar__link" aria-current="page" href="#">Mon profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr" href="#">Compétences</a>
+                            <a class="nav-link navbar__link" href="#">Compétences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr" href="#">Expériences</a>
+                            <a class="nav-link navbar__link" href="#">Expériences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr" href="#" >Diplômes</a>
+                            <a class="nav-link navbar__link" href="#" >Diplômes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr" href="#">Portfolio</a>
+                            <a class="nav-link navbar__link" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bclr" href="#">Recommandations</a>
+                            <a class="nav-link navbar__link" href="#">Recommandations</a>
                         </li>
                         </ul>
                     </div>
@@ -63,17 +63,17 @@
         <!--* profil -->
         <div class="row d-flex justify-content-center align-items-center pt-5">
             <div class="col-12 col-md-6 col-lg-5 col-xl-4 order-md-2 text-center py-4"> 
-                <img class="rounded-circle" src="./public/assets/img/profile-picture-kevin-lavenant.jpg" alt="photo de profil Kévin Lavenant"> 
+                <img class="rounded-circle profilpic" src="./public/assets/img/profile-picture-kevin-lavenant.jpg" alt="photo de profil Kévin Lavenant"> 
             </div>
             <div class="col-12 col-md-6 col-lg-5 col-xl-4 order-md-1 text-center">
-                <h1 class="pt-2">Kévin LAVENANT</h1>
-                <h2>Développeur Web Junior</h2>
-                <button type="button" class="btn btn-primary" id="headerbtn" >Téléchargez mon CV</button>
+                <h1 class="pt-2 title title__name">Kévin LAVENANT</h1>
+                <h2 class="title title__description" >Développeur Web Junior</h2>
+                <button type="button" class="my-btn"><a href="#" class="my-btn__link" >Téléchargez mon CV</a></button>
             </div>
         </div>
         <div class="row d-flex justify-content-center m-0">
             <div class="col-12 col-md-10 pt-4 pb-1 text-center">
-                <p id="presentationtxt"> 
+                <p class="paragraph-txt"> 
                     <i class="fa-solid fa-quote-left fa-2xl pe-3"></i> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptatum tenetur natus enim provident illum sint eligendi hic officia deserunt quisquam numquam quis atque, quam dignissimos, molestiae quaerat. Distinctio, obcaecati! Repudiandae sit at perspiciatis unde ea ut laborum ipsum temporibus quae dolore neque asperiores repellat beatae, deserunt labore ratione architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto asperiores id nobis ut, exercitationem, consequatur, laudantium molestias laborum ad odio quasi? Placeat omnis odio inventore harum ad repellat quos cum qui consequuntur fuga. Quae dignissimos odio mollitia expedita tempore eius corporis? Tenetur alias rerum, neque nihil excepturi at fugit.
                     <i class="fa-solid fa-quote-right fa-2xl ps-3"></i> 
@@ -82,7 +82,7 @@
         </div>
         <div class="row m-0 d-none d-md-block">
             <div class="col-12 text-center">
-                    <i class="fa-solid fa-chevron-down fa-2xl"></i>
+                    <i class="fa-solid fa-chevron-down fa-2xl pt-lg-5"></i>
             </div>
         </div>
     </div>
@@ -90,22 +90,22 @@
 
 <main>
 <!--* skills -->
-<section class="skills">
+<section class="skills colored-section">
     <div class="container">
         <div class="row">
             <div class="col text-center pt-5 pb-5">
-                <h3>Compétences</h3>
+                <h3 class="section-title">Compétences</h3>
             </div>
         </div>
         <div class="row justify-content-center">
             <!-- logo HTML -->
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5"> 
-                <div class="modal fade" id="htmlmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal" id="htmlmodal" tabindex="-1" aria-labelledby="htmlModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body">
                             <div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div>
                                 <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
@@ -119,56 +119,247 @@
                 </div> 
             </div>
             <!-- logo CSS -->
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 ">
+                <div class="modal" id="cssmodal" tabindex="-1" aria-labelledby="cssModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#cssmodal"> 
                     <i class="fa-brands fa-css3-alt fa-5x" style="color: #304bde;"></i> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo bootstrap -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 ">
+                <div class="modal" id="bootstrapmodal" tabindex="-1" aria-labelledby="bootstrapModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#bootstrapmodal"> 
                     <i class="fa-brands fa-bootstrap fa-5x" style="color: #543b78;"></i> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo JS -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5">
+                <div class="modal" id="jsmodal" tabindex="-1" aria-labelledby="jsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#jsmodal"> 
                     <i class="fa-brands fa-square-js fa-5x" style="color: #d0b52f;"></i> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo github -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5">
+                <div class="modal" id="githubmodal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#githubmodal"> 
                     <i class="fa-brands fa-github fa-5x" style="color: #161414;"></i> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo litghroom -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5">
+                <div class="modal" id="lightroommodal" tabindex="-1" aria-labelledby="lightroomModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#lightroommodal"> 
                     <img src="./public/assets/img/logo-lightroom.png" alt="logo adobe lightroom"> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo photoshop -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5">
+                <div class="modal" id="photoshopmodal" tabindex="-1" aria-labelledby="photoshopModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#photoshopmodal"> 
                     <img src="./public/assets/img/logo-photoshop.png" alt="logo adobe photoshop"> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo figma -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5">
+                <div class="modal" id="figmamodal" tabindex="-1" aria-labelledby="figmaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#figmamodal"> 
                     <i class="fa-brands fa-figma fa-5x" style="color: #ec4b1d;"></i> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
+            <!-- logo trello -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5">
+                <div class="modal" id="trellomodal" tabindex="-1" aria-labelledby="trelloModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#trellomodal"> 
                     <i class="fa-brands fa-trello fa-5x" style="color: #2e75ba;"></i> 
                 </div> 
             </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5 "> 
-                <div class="logo-container d-flex align-items-center justify-content-center"> 
-                    <img id="logorsz" src="./public/assets/img/logo-microsoft-office.png" alt="logo microsoft office"> 
+            <!-- logo office -->
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5">
+                <div class="modal" id="officemodal" tabindex="-1" aria-labelledby="officeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div>
+                                <button type="button" class="btn-close modal-content__btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div>
+                                <p class="text-center pt-5 pb-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi similique nobis, tenetur sequi exercitationem nulla ipsa quibusdam. Illo, velit ipsam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="logo-container d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#officemodal"> 
+                    <img id="office-logo-rsz" src="./public/assets/img/logo-microsoft-office.png" alt="logo microsoft office"> 
                 </div> 
             </div>
         </div>
     </div>
 </section>
 
+<section class="experiences">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center pt-5 pb-5">
+                <h3 class="section-title">Expériences</h3>
+            </div>
+        </div>
+        <!-- timeline -->
+        <div class="row">
+            <div class="col">
+                <div class="box-timeline">
+                    <!-- time line -->
+                    <div class="line"></div>
+                    <!-- icons cercles -->
+                    <div class="round r1 rounded-circle">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <div class="round r2 rounded-circle">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="round r3 rounded-circle">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="round r4 rounded-circle">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                    <div class="round r5 rounded-circle">
+                        <i class="fa-solid fa-door-open"></i>
+                    </div>
+                    <!-- description box -->
+                    <div class="box b1">
+                        <h4 class="job-title" >Lorem, ipsum.</h4>
+                        <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
+                    </div>
+                    <div class="box b2">
+                        <h4 class="job-title" >Lorem, ipsum.</h4>
+                        <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
+                    </div>
+                    <div class="box b3">
+                        <h4 class="job-title" >Lorem, ipsum.</h4>
+                        <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
+                    </div>
+                    <div class="box b4">
+                        <h4 class="job-title" >Lorem, ipsum.</h4>
+                        <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
+                    </div>
+                    <div class="box b5">
+                        <h4 class="job-title" >Lorem, ipsum.</h4>
+                        <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
 
 
 <!--? test de photo de profil -->

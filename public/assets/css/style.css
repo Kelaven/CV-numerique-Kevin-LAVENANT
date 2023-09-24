@@ -1,73 +1,72 @@
-/** global setting */
+/*! global setting */
 html body{
     background-color: #FCFCFC;
 }
 
-
-
-/** header settings */
+/*! header settings */
 header{
     min-height: 100vh;
 }
-/* colors and font family on navbar */
-header .bclr{
+/* navbar settings */
+header .navbar__link{
     color: #6667AA;
+    font-family: 'Roboto', sans-serif;
 }
-header i{
+header .navbar__menulogo{
     color: #6667AA;
     padding-top: 15px;
     padding-bottom: 14px;
 }
-header #borderbclr{
+header .navbar__menulogo--border{
     border-color: #6667AA;
 }
-header li{
-    font-family: 'Roboto', sans-serif;
-}
-/* dividing line on navbar-bottom */
-header .navbar{
+header .navbar__dividingline{
     border-bottom: 2px solid #DDD;
 }
 /* profile picture */
-header .rounded-circle{
+header .profilpic{
     height: 315px;
     width: 315px;
     object-fit: cover;
 }
-/* giant text */
-header h1{
+/* tall text */
+.title{
     font-family: 'Montserrat', sans-serif;
     color: #6667AA;
+}
+header .title__name{
     font-size: 38px;
     text-transform: uppercase;
     font-weight: 600;
 }
-header h2{
-    font-family: 'Montserrat', sans-serif;
+header .title__description{
     font-size: 21px;
     padding: 8px 0 20px;
+    color: #212529;
 }
-/* CV download button style and transformation at hover */
-header #headerbtn{
+/* CV download button */
+header .my-btn{
     background-color: #6667AA;
     border: none;
+    border-radius: 10px;
     padding: 10px 15px;
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
-}
-header #headerbtn{
     transition: transform .5s;
 }
-header #headerbtn:hover{
+header .my-btn:hover{
     transform: scale(1.1);
+    background-color: #6667AA;
 }
-/* presentation text */
+header .my-btn__link{
+    text-decoration: none;
+    color: #fcfcfc;
+}
+/* quote icons */
 header .fa-quote-left,.fa-quote-right{
     color: #212529;
 }
-/* header .fa-quote-right{
-    height: 70px;
-} */
-header #presentationtxt{
+/* presentation text */
+.paragraph-txt{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -76,6 +75,7 @@ header .fa-chevron-down{
     animation: slideDown 2s forwards;
     animation-delay: 1s;
     animation-iteration-count: 3;
+    color: #6667AA;
 }
 @keyframes slideDown {
     from{
@@ -88,18 +88,16 @@ header .fa-chevron-down{
     }
 }
 
-
-
-
-
-/** main settings */
-
+/*! main settings */
 /** skills */
 
-.skills{
+.colored-section{
     background-color: #DDD;
 }
-main .skills h3{
+main .skills{
+    min-height: 90vh;
+}
+main .section-title{
     color: #6667AA;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -120,18 +118,98 @@ main .skills .logo-container{
 main .skills .logo-container:hover{
     transform: scale(1.1);
 }
-#logorsz{
+main .skills #office-logo-rsz{
     height: 80px;
     width: 80px;
 }
-main .skills #htmlmodal .modal-content{
+main .skills .modal-content{
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
 }
-main .skills #htmlmodal .btn-close{
+main .skills .modal-content__btn-close{
     float: right;
 }
+
+/** Experiences */
+main .experiences{
+    min-height: 100vh;
+}
+main .experiences .box-timeline{
+    width: 100%;
+    height: 2000px;
+    background-color: bisque;
+    position: relative;
+}
+main .experiences .line{
+    height: 1250px;
+    width: 8px;
+    background-color: #DDD;
+    margin: 0 auto;
+}
+main .experiences .round{
+    height: 80px;
+    width: 80px;
+    background-color: #DDD;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+main .experiences .r1{
+    top: 0px;
+}
+main .experiences .r2{
+    top: 313px;
+}
+main .experiences .r3{
+    top: 626px;
+}
+main .experiences .r4{
+    top: 939px;
+}
+main .experiences .r5{
+    top: 1250px;
+}
+main .experiences .job-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+main .experiences .box{
+    background-color: #6667AA;
+    min-height: 200px;
+    height: auto;
+    width: 580px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding: 20px;
+}
+main .experiences .b1{
+    top: 0px;
+    left: calc(50% - 358px);
+}
+main .experiences .b2{
+    top: 313px;
+    left: calc(50% + 358px);
+}
+main .experiences .b3{
+    top: 626px;
+    left: calc(50% - 358px);
+}
+main .experiences .b4{
+    top: 939px;
+    left: calc(50% + 358px);
+}
+main .experiences .b5{
+    top: 1250;
+    left: calc(50% - 358px);
+}
+
 
 
 

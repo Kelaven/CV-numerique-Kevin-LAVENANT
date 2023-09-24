@@ -182,7 +182,8 @@ main .experiences .box{
     background-color: #6667AA;
     min-height: 200px;
     height: auto;
-    width: 580px;
+    width: 450px;
+    /* width: 480px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     left: 50%;
     transform: translateX(-50%);
@@ -191,25 +192,55 @@ main .experiences .box{
 }
 main .experiences .b1{
     top: 0px;
-    left: calc(50% - 358px);
+    left: calc(50% - 280px);
+    /* left: calc(50% - 318px); */
 }
+/* .b1::after,.b3::after,.b5::after{
+    content:"";
+    border-left:20px solid #6667AA;
+    border-bottom:20px solid transparent;
+    border-top: 20px solid transparent;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+}
+.b2::after,.b4::after{
+    content:"";
+    border-right:20px solid #6667AA;
+    border-bottom:20px solid transparent;
+    border-top: 20px solid transparent;
+    position: absolute;
+    top: 20px;
+    right: 580px;
+} */
 main .experiences .b2{
     top: 313px;
-    left: calc(50% + 358px);
+    left: calc(50% + 280px);
 }
 main .experiences .b3{
     top: 626px;
-    left: calc(50% - 358px);
+    left: calc(50% - 280px);
 }
 main .experiences .b4{
     top: 939px;
-    left: calc(50% + 358px);
+    left: calc(50% + 280px);
 }
 main .experiences .b5{
     top: 1250;
-    left: calc(50% - 358px);
+    left: calc(50% - 280px);
 }
-
+@media screen and (max-width: 990px){
+    .line{
+        position: relative;
+        left: 225px;
+    }
+    main .experiences .round{
+        left: calc(50% + 225px);
+    }
+    main .experiences .box{
+        left: calc(50% - 60px);
+    }
+}
 
 
 

@@ -3,28 +3,29 @@ html body{
     background-color: #FCFCFC;
 }
 
-/*! header settings */
+/***! header ***/
+
 header{
     min-height: 100vh;
 }
 /* navbar settings */
-header .navbar__link{
+.navbar__link{
     color: #6667AA;
     font-family: 'Roboto', sans-serif;
 }
-header .navbar__menulogo{
+.navbar__menulogo{
     color: #6667AA;
     padding-top: 15px;
     padding-bottom: 14px;
 }
-header .navbar__menulogo--border{
+.navbar__menulogo--border{
     border-color: #6667AA;
 }
-header .navbar__dividingline{
+.navbar__dividingline{
     border-bottom: 2px solid #DDD;
 }
 /* profile picture */
-header .profilpic{
+.profilpic{
     height: 315px;
     width: 315px;
     object-fit: cover;
@@ -34,18 +35,18 @@ header .profilpic{
     font-family: 'Montserrat', sans-serif;
     color: #6667AA;
 }
-header .title__name{
+.title__name{
     font-size: 38px;
     text-transform: uppercase;
     font-weight: 600;
 }
-header .title__description{
+.title__description{
     font-size: 21px;
     padding: 8px 0 20px;
     color: #212529;
 }
 /* CV download button */
-header .my-btn{
+.my-btn{
     background-color: #6667AA;
     border: none;
     border-radius: 10px;
@@ -53,16 +54,16 @@ header .my-btn{
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     transition: transform .5s;
 }
-header .my-btn:hover{
+.my-btn:hover{
     transform: scale(1.1);
     background-color: #6667AA;
 }
-header .my-btn__link{
+.my-btn__link{
     text-decoration: none;
     color: #fcfcfc;
 }
 /* quote icons */
-header .fa-quote-left,.fa-quote-right{
+.fa-quote-left,.fa-quote-right{
     color: #212529;
 }
 /* presentation text */
@@ -71,7 +72,7 @@ header .fa-quote-left,.fa-quote-right{
     font-weight: 300;
 }
 /* arrow down animation */
-header .fa-chevron-down{
+.fa-chevron-down{
     animation: slideDown 2s forwards;
     animation-delay: 1s;
     animation-iteration-count: 3;
@@ -88,21 +89,21 @@ header .fa-chevron-down{
     }
 }
 
-/*! main settings */
-/** skills */
+/***! main ***/
 
+/*! skills */
 .colored-section{
     background-color: #DDD;
 }
-main .skills{
+.skills{
     min-height: 90vh;
 }
-main .section-title{
+.section-title{
     color: #6667AA;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
-main .skills .logo-container{
+.skills .logo-container{
     height: 180px;
     width: 140px;
     border-top-left-radius: 30px;
@@ -115,39 +116,38 @@ main .skills .logo-container{
     transition: transform .5s;
     cursor: url("/public/assets/img/icon-zoom-in.png"), zoom-in;
 }
-main .skills .logo-container:hover{
+.skills .logo-container:hover{
     transform: scale(1.1);
 }
-main .skills #office-logo-rsz{
+.skills #office-logo-rsz{
     height: 80px;
     width: 80px;
 }
-main .skills .modal-content{
+.skills .modal-content{
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
 }
-main .skills .modal-content__btn-close{
+.skills .modal-content__btn-close{
     float: right;
 }
 
-/** Experiences */
-main .experiences{
+/*! Experiences */
+.experiences{
     min-height: 100vh;
 }
-main .experiences .box-timeline{
+.box-timeline{
     width: 100%;
-    height: 2000px;
-    background-color: bisque;
+    min-height: 1500px;
     position: relative;
 }
-main .experiences .line{
+.box-timeline__line{
     height: 1250px;
     width: 8px;
     background-color: #DDD;
     margin: 0 auto;
 }
-main .experiences .round{
+.box-timeline__round{
     height: 80px;
     width: 80px;
     background-color: #DDD;
@@ -159,76 +159,58 @@ main .experiences .round{
     justify-content: center;
     font-size: 40px;
 }
-main .experiences .r1{
+.box-timeline__round--r1{
     top: 0px;
 }
-main .experiences .r2{
+.box-timeline__round--r2{
     top: 313px;
 }
-main .experiences .r3{
+.box-timeline__round--r3{
     top: 626px;
 }
-main .experiences .r4{
+.box-timeline__round--r4{
     top: 939px;
 }
-main .experiences .r5{
+.box-timeline__round--r5{
     top: 1250px;
 }
-main .experiences .job-title{
+.box-timeline__job-title{
     font-family: 'Montserrat', sans-serif;
     font-size: 21px;
 }
-main .experiences .box{
+.box-timeline__box{
     background-color: #6667AA;
     min-height: 200px;
     height: auto;
     width: 450px;
-    /* width: 480px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     padding: 20px;
 }
-main .experiences .b1{
+.box-timeline__box--b1{
     top: 0px;
     left: calc(50% - 280px);
     /* left: calc(50% - 318px); */
 }
-/* .b1::after,.b3::after,.b5::after{
-    content:"";
-    border-left:20px solid #6667AA;
-    border-bottom:20px solid transparent;
-    border-top: 20px solid transparent;
-    position: absolute;
-    top: 20px;
-    right: -20px;
-}
-.b2::after,.b4::after{
-    content:"";
-    border-right:20px solid #6667AA;
-    border-bottom:20px solid transparent;
-    border-top: 20px solid transparent;
-    position: absolute;
-    top: 20px;
-    right: 580px;
-} */
-main .experiences .b2{
+.box-timeline__box--b2{
     top: 313px;
     left: calc(50% + 280px);
 }
-main .experiences .b3{
+.box-timeline__box--b3{
     top: 626px;
     left: calc(50% - 280px);
 }
-main .experiences .b4{
+.box-timeline__box--b4{
     top: 939px;
     left: calc(50% + 280px);
 }
-main .experiences .b5{
+.box-timeline__box--b5{
     top: 1250;
     left: calc(50% - 280px);
 }
+/* media querie for box-timeline until portrait-mobile */
 @media screen and (max-width: 990px){
     .line{
         position: relative;
@@ -240,6 +222,15 @@ main .experiences .b5{
     main .experiences .box{
         left: calc(50% - 60px);
     }
+}
+/* properties for box into portrait-mobile */
+.box__mobileportrait{
+    background-color: #6667AA;
+    min-height: 200px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    left: 50%;
+    padding: 20px;
 }
 
 

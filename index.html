@@ -21,9 +21,10 @@
 
 <body>
 
+<!--! header navbar + presentation -->
 <header>
-    <!--* navbar -->
     <div class="container-fluid">
+        <!--* navbar -->
         <div class="row">
             <div class="col p-0">
                 <nav class="navbar navbar-expand-md sticky-top d-flex p-3 navbar__dividingline">
@@ -71,6 +72,7 @@
                 <button type="button" class="my-btn"><a href="#" class="my-btn__link" >Téléchargez mon CV</a></button>
             </div>
         </div>
+        <!--* presentation text -->
         <div class="row d-flex justify-content-center m-0">
             <div class="col-12 col-md-10 pt-4 pb-1 text-center">
                 <p class="paragraph-txt"> 
@@ -80,23 +82,25 @@
                 </p>
             </div>
         </div>
+        <!--* chevron -->
         <div class="row m-0 d-none d-md-block">
             <div class="col-12 text-center">
-                    <i class="fa-solid fa-chevron-down fa-2xl pt-lg-5"></i>
+                    <a href="#skillslink"><i class="fa-solid fa-chevron-down fa-2xl pt-lg-5"></i></a>
             </div>
         </div>
     </div>
 </header>
 
 <main>
-<!--* skills -->
-<section class="skills colored-section">
+<!--! skills -->
+<section class="skills colored-section" id="skillslink" >
     <div class="container">
         <div class="row">
             <div class="col text-center pt-5 pb-5">
                 <h3 class="section-title">Compétences</h3>
             </div>
         </div>
+        <!--* logos and modals -->
         <div class="row justify-content-center">
             <!-- logo HTML -->
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center px-0 py-5"> 
@@ -301,7 +305,7 @@
         </div>
     </div>
 </section>
-
+<!--! experiences -->
 <section class="experiences">
     <div class="container">
         <div class="row">
@@ -311,90 +315,217 @@
         </div>
         <!-- timeline -->
         <div class="row">
-            <!-- display none on telephone -->
+            <!--* display none on telephone -->
             <div class="col d-none d-sm-block">
-                <div class="box-timeline">
+                <div class="box-timeline my-5">
                     <!-- time line -->
                     <div class="box-timeline__line"></div>
                     <!-- icons cercles -->
                     <div class="box-timeline__round box-timeline__round--r1 rounded-circle">
-                        <i class="fa-solid fa-sack-dollar"></i>
+                        <!-- <i class="fa-solid fa-sack-dollar box-timeline__round__logo"></i> -->
+                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/bank-building.png" alt="bank-building"/> -->
+                        <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/bank-cards.png" alt="bank-cards"/>
                     </div>
                     <div class="box-timeline__round box-timeline__round--r2 rounded-circle">
-                        <i class="fa-solid fa-newspaper"></i>
+                        <!-- <i class="fa-solid fa-newspaper box-timeline__round__logo"></i> -->
+                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/newspaper-.png" alt="newspaper-"/> -->
+                        <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/news.png" alt="news"/>
                     </div>
                     <div class="box-timeline__round box-timeline__round--r3 rounded-circle">
-                        <i class="fa-solid fa-utensils"></i>
+                        <!-- <i class="fa-solid fa-utensils box-timeline__round__logo"></i> -->
+                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/meal.png" alt="meal"/> -->
+                        <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/tableware.png" alt="tableware"/>
                     </div>
                     <div class="box-timeline__round box-timeline__round--r4 rounded-circle">
-                        <i class="fa-solid fa-shop"></i>
+                        <!-- <i class="fa-solid fa-shop box-timeline__round__logo"></i> -->
+                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/market.png" alt="market"/> -->
+                        <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/shopping-cart-loaded.png" alt="shopping-cart-loaded"/>
                     </div>
                     <div class="box-timeline__round box-timeline__round--r5 rounded-circle">
-                        <i class="fa-solid fa-door-open"></i>
+                        <!-- <i class="fa-solid fa-door-open box-timeline__round__logo"></i> -->
+                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/retirement.png" alt="retirement"/> -->
+                        <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/home.png" alt="home"/>
                     </div>
-                    <!-- description box -->
+                    <!-- description boxes -->
                     <div class="box-timeline__box box-timeline__box--b1">
-                        <h4 class="box-timeline__job-title" >Lorem, ipsum.</h4>
+                        <h4 class="box-timeline__job-title">Conseiller bancaire - Crédit Agricole</h4>
+                        <p class="paragraph-txt">
+                            <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
+                        </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
                     <div class="box-timeline__box box-timeline__box--b2">
                         <h4 class="box-timeline__job-title" >Lorem, ipsum.</h4>
+                        <p class="paragraph-txt">
+                            <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
+                        </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
                     <div class="box-timeline__box box-timeline__box--b3">
-                        <h4 class="box-timeline__job-title" >Lorem, ipsum.</h4>
+                        <h4 class="box-timeline__job-title">Lorem, ipsum.</h4>
+                        <p class="paragraph-txt">
+                            <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
+                        </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
                     <div class="box-timeline__box box-timeline__box--b4">
-                        <h4 class="box-timeline__job-title" >Lorem, ipsum.</h4>
+                        <h4 class="box-timeline__job-title">Lorem, ipsum.</h4>
+                        <p class="paragraph-txt">
+                            <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
+                        </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
                     <div class="box-timeline__box box-timeline__box--b5">
                         <h4 class="box-timeline__job-title" >Lorem, ipsum.</h4>
+                        <p class="paragraph-txt">
+                            <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
+                        </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
                 </div>
             </div>
-
-
-
-            <!-- display yes on telephone -->
-            <div class="col d-sm-none d-block px-1">
+            <!--* display yes on telephone -->
+            <!-- <div class="row justify-content-center"> -->
+            <div class="col d-sm-none d-block pb-3">
                 <div class="box__mobileportrait my-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
+            </div>
+            <div class="col d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
+            </div>
+            <div class="col d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
+            </div>
+            <div class="col d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
+            </div>
+            <div class="col d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-5">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
             </div>
+            <!-- </div> -->
             
         </div>
     </div>
 </section>
+<!--! qualifications -->
+<section class="qualifications colored-section">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center pt-5 pb-5">
+                <h3 class="section-title">Diplômes</h3>
+            </div>
+        </div>
+    <!-- qualifications boxes -->
+        <div class="row">
+            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4">
+                <div class="logo-container logo-container__qualification logo-container__qualification--lamanu">
+                    <p>LaManu</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4">
+                <div class="logo-container logo-container__qualification">
+                    <p>Ifag</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4">
+                <div class="logo-container logo-container__qualification">
+                    <p>Upjv Licence</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4 mb-5">
+                <div class="logo-container logo-container__qualification">
+                    <p>Upjv tc</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
+</section>
+<!--! portfolio -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="col text-center pt-5 pb-5">
+                    <h3 class="section-title">Portfolio</h3>
+                </div>
+            </div>
+        </div>
+        <!-- blocks -->
+        <!-- <div class="row justify-content-center">
+            <div class="col-5 pb-5">
+                <div class="box-portfolio">
+                    
+                </div>
+            </div>
+            <div class="col-5 pb-5">
+                <div class="box-portfolio">
 
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!--! recommandations  -->
+<section class="colored-section" >
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="col text-center pt-5 pb-5">
+                    <h3 class="section-title">Recommandations</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
 
+            </div>
+        </div>
+    </div>
+</section>
+<!--! hobbies  -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="col text-center pt-5 pb-5">
+                    <h3 class="section-title">Hobbies</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
 
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-
-
-
+<!--! footer  -->
+<footer class="colored-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            footer
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 

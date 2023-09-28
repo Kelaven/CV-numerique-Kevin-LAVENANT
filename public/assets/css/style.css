@@ -2,6 +2,9 @@
 html body{
     background-color: #FCFCFC;
 }
+h4{
+    color: #6667AA;
+}
 
 /***! header ***/
 
@@ -96,14 +99,14 @@ header{
     background-color: #DDD;
 }
 .skills{
-    min-height: 90vh;
+    min-height: 100vh;
 }
 .section-title{
     color: #6667AA;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
-.skills .logo-container{
+.logo-container{
     height: 180px;
     width: 140px;
     border-top-left-radius: 30px;
@@ -116,19 +119,19 @@ header{
     transition: transform .5s;
     cursor: url("/public/assets/img/icon-zoom-in.png"), zoom-in;
 }
-.skills .logo-container:hover{
+.logo-container:hover{
     transform: scale(1.1);
 }
-.skills #office-logo-rsz{
+#office-logo-rsz{
     height: 80px;
     width: 80px;
 }
-.skills .modal-content{
+.modal-content{
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
 }
-.skills .modal-content__btn-close{
+.modal-content__btn-close{
     float: right;
 }
 
@@ -146,6 +149,8 @@ header{
     width: 8px;
     background-color: #DDD;
     margin: 0 auto;
+    box-shadow: 2px 2px 2px #cccccc,
+                -2px -2px 2px #fefefe;
 }
 .box-timeline__round{
     height: 80px;
@@ -158,6 +163,11 @@ header{
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    box-shadow: 2px 2px 2px #cccccc,
+                -2px -2px 2px #fefefe;
+}
+.box-timeline__round__logo{
+    color: #6667AA;
 }
 .box-timeline__round--r1{
     top: 0px;
@@ -179,15 +189,19 @@ header{
     font-size: 21px;
 }
 .box-timeline__box{
-    background-color: #6667AA;
     min-height: 200px;
     height: auto;
     width: 450px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background: #FCFCFC;
+    box-shadow:  4px 4px 9px #c6c6c6,
+                -4px -4px 9px #ffffff;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     padding: 20px;
+}
+.box-timeline__box p{
+    text-align: justify;
 }
 .box-timeline__box--b1{
     top: 0px;
@@ -212,26 +226,56 @@ header{
 }
 /* media querie for box-timeline until portrait-mobile */
 @media screen and (max-width: 990px){
-    .line{
+    .box-timeline__line{
         position: relative;
         left: 225px;
     }
-    main .experiences .round{
+    main .box-timeline__round{
         left: calc(50% + 225px);
     }
-    main .experiences .box{
+    main .box-timeline__box{
         left: calc(50% - 60px);
     }
 }
 /* properties for box into portrait-mobile */
 .box__mobileportrait{
-    background-color: #6667AA;
+    background-color: #FCFCFC;
     min-height: 200px;
     height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    left: 50%;
+    box-shadow: 4px 4px 9px #c6c6c6,
+                -4px -4px 9px #fff;
+    padding: 20px;
+    width: 350px;
+}
+
+/*! qualifications */
+.qualifications{
+    min-height: 90vh;
+}
+.logo-container__qualification{
+    width: 350px;
+    height: 300px;
     padding: 20px;
 }
+.logo-container__qualification--lamanu{
+    background-image: url('/public/assets/img/pngegg.png');
+    background-position: 20% 10%;
+    
+}
+
+/*! portfolio */
+.box-portfolio{
+    background-color: #6667AA;
+    height: 450px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+
+
+
+
 
 
 

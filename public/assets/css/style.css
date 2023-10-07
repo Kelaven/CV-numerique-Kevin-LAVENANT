@@ -6,12 +6,12 @@ h4{
     color: #6667AA;
 }
 
-/***! header ***/
 
-header{
-    min-height: 100vh;
+/***! navbar ***/
+.navbar{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
 }
-/* navbar settings */
 .navbar__link{
     color: #6667AA;
     font-family: 'Roboto', sans-serif;
@@ -26,6 +26,16 @@ header{
 }
 .navbar__dividingline{
     border-bottom: 2px solid #DDD;
+}
+
+/***! header ***/
+
+header{
+    min-height: 100vh;
+}
+hr{
+    border-bottom: solid 1.5px;
+    color: #8e8e8e;
 }
 /* profile picture */
 .profilpic{
@@ -135,7 +145,7 @@ header{
     float: right;
 }
 
-/*! Experiences */
+/*! experiences */
 .experiences{
     min-height: 100vh;
 }
@@ -193,8 +203,8 @@ header{
     height: auto;
     width: 450px;
     background: #FCFCFC;
-    box-shadow:  4px 4px 9px #c6c6c6,
-                -4px -4px 9px #ffffff;
+    box-shadow:  3px 3px 9px #c6c6c6,
+                -3px -3px 9px #ffffff;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -253,32 +263,91 @@ header{
     min-height: 90vh;
 }
 .logo-container__qualification{
-    width: 350px;
+    width: 450px;
     height: 300px;
     padding: 20px;
 }
-.logo-container__qualification--lamanu{
-    background-image: url('/public/assets/img/pngegg.png');
-    background-position: 20% 10%;
-    
+/* cancel transforme and place image */
+.logo-container__qualification{
+    position: relative;
+    overflow: hidden;
+    transition: none;
+    cursor: default;
+}
+.logo-container__qualification:hover{
+    transform: none;
+}
+/* place image */
+#img1{
+    position: absolute;
+    height: 580px;
+    top: 30px;
+    right: 260px;
+    transform: rotate(0.1turn);
+}
+
+/*? Idée OK mais code à faire en Javascript plus tard  */
+/* #img1:hover{    
+    animation: apparition 2.5s;
+} 
+
+@keyframes apparition {
+    from{
+        transform: translateY(100%);
+    }
+    to {
+        transform: rotate(0%);
+    }
+}  */
+
+.logo-container__qualification__title{
+    color: #6667AA;
+    /* font-family: font-family: 'Montserrat', sans-serif; */
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
 }
 
 /*! portfolio */
 .box-portfolio{
     background-color: #6667AA;
-    height: 450px;
-    width: 500px;
+    height: 355px;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding: 20px;
 }
 
 
+/*! recommendations */
 
-
-
-
-
-
+#recommandations__section{
+    min-height: 80vh;
+}
+#place__carosel{
+    height: 400px;
+}
+.carousel-indicators{
+    top: 350px;
+}
+.title__carosel{
+    /* padding-left: 130px; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+}
+.content__carosel{
+    padding: 40px 130px;
+    font-family: 'Roboto', sans-serif;
+}
+.title__carosel--little{
+    padding: 0px 150px 70px;
+}
+.content__carosel--litle{
+    padding: 40px 180px;
+}
+#CA__carosel{
+    background-image: url("/public/assets/img/logo-credit-agricole.png");
+    background-repeat: no-repeat;
+}
 
 /*? test de photo de profil */
 /* .phototestcontainer{

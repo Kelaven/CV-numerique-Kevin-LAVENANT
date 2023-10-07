@@ -21,46 +21,45 @@
 
 <body>
 
-<!--! header navbar + presentation -->
+<!--! sticky-top navbar  -->
+<nav class="navbar sticky-top navbar-expand-md d-flex p-3">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <!-- id to change border color -->
+    <button class="navbar-toggler navbar__menulogo--border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- my menu logo -->
+    <span><i class="fa-solid fa-bars fa-xl navbar__menulogo"></i></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link navbar__link" aria-current="page" href="#">Mon profil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link navbar__link" href="#">Compétences</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link navbar__link" href="#">Expériences</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link navbar__link" href="#" >Diplômes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link navbar__link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link navbar__link" href="#">Recommandations</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<!--! presentation  -->
 <header>
     <div class="container-fluid">
-        <!--* navbar -->
-        <div class="row">
-            <div class="col p-0">
-                <nav class="navbar navbar-expand-md sticky-top d-flex p-3 navbar__dividingline">
-                    <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <!-- id to change border color -->
-                    <button class="navbar-toggler navbar__menulogo--border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- my menu logo -->
-                    <span><i class="fa-solid fa-bars fa-xl navbar__menulogo"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link navbar__link" aria-current="page" href="#">Mon profil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar__link" href="#">Compétences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar__link" href="#">Expériences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar__link" href="#" >Diplômes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar__link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar__link" href="#">Recommandations</a>
-                        </li>
-                        </ul>
-                    </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+        <!--* navbar hr -->
+        <hr>
         <!--* profil -->
         <div class="row d-flex justify-content-center align-items-center pt-5">
             <div class="col-12 col-md-6 col-lg-5 col-xl-4 order-md-2 text-center py-4"> 
@@ -386,31 +385,31 @@
             </div>
             <!--* display yes on telephone -->
             <!-- <div class="row justify-content-center"> -->
-            <div class="col d-sm-none d-block pb-3">
+            <div class="col ps-3 d-sm-none d-block pb-3">
                 <div class="box__mobileportrait my-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
             </div>
-            <div class="col d-sm-none d-block pb-3">
+            <div class="col ps-3 d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
             </div>
-            <div class="col d-sm-none d-block pb-3">
+            <div class="col ps-3 d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
             </div>
-            <div class="col d-sm-none d-block pb-3">
+            <div class="col ps-3 d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-4">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                 </div>
             </div>
-            <div class="col d-sm-none d-block pb-3">
+            <div class="col ps-3 d-sm-none d-block pb-3">
                 <div class="box__mobileportrait  mb-5">
                     <h4 class="job-title" >Lorem, ipsum.</h4>
                     <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
@@ -430,25 +429,26 @@
             </div>
         </div>
     <!-- qualifications boxes -->
-        <div class="row">
-            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4">
-                <div class="logo-container logo-container__qualification logo-container__qualification--lamanu">
-                    <p>LaManu</p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-11 col-md-6 p-0 d-flex justify-content-center py-4">
+                <div class="logo-container logo-container__qualification logo-container__qualification--lamanu d-flex justify-content-center">
+                    <img id="img1" src="./public/assets/img/pngegg.png" alt="">
+                    <p class="logo-container__qualification__title" >LaManu</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4">
-                <div class="logo-container logo-container__qualification">
-                    <p>Ifag</p>
+            <div class="col-11 col-md-6 p-0 d-flex justify-content-center py-4">
+                <div class="logo-container logo-container__qualification d-flex justify-content-center">
+                    <p class="logo-container__qualification__title" >Ifag</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4">
-                <div class="logo-container logo-container__qualification">
-                    <p>Upjv Licence</p>
+            <div class="col-11 col-md-6 p-0 d-flex justify-content-center py-4">
+                <div class="logo-container logo-container__qualification d-flex justify-content-center">
+                    <p class="logo-container__qualification__title" >Upjv Licence</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 p-0 d-flex justify-content-center py-4 mb-5">
-                <div class="logo-container logo-container__qualification">
-                    <p>Upjv tc</p>
+            <div class="col-11 col-md-6 p-0 d-flex justify-content-center py-4 mb-5">
+                <div class="logo-container logo-container__qualification d-flex justify-content-center">
+                    <p class="logo-container__qualification__title" >Upjv tc</p>
                 </div>
             </div>
             
@@ -467,22 +467,22 @@
             </div>
         </div>
         <!-- blocks -->
-        <!-- <div class="row justify-content-center">
-            <div class="col-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 pb-4">
                 <div class="box-portfolio">
                     
                 </div>
             </div>
-            <div class="col-5 pb-5">
+            <div class="col-12 pb-5">
                 <div class="box-portfolio">
 
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </section>
 <!--! recommandations  -->
-<section class="colored-section" >
+<section class="colored-section" id="recommandations__section">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -491,10 +491,50 @@
                 </div>
             </div>
         </div>
+        <!-- carousel -->
+        <div id="place__carosel" class="d-flex align-items-center px-5">
         <div class="row">
             <div class="col">
-
+                <div id="recommendations__carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner text-center">
+                    <div class="carousel-item active" data-bs-interval="100000" id="CA__carosel" >
+                        <h4 class="title__carosel title__carosel--little">Jérémy D'HUVETTERE, Directeur d'agence au Credit Agricole</h4>
+                        <!-- <img src="./public/assets/img/logo-credit-agricole.png" alt="logo de la banque Credit Agricole"> -->
+                        <p class="content__carosel content__carosel--litle"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>Kevin, un collaborateur consciencieux, sérieux et professionnel à l’écoute des clients! Kevin a accompagné et partagé la vie de l’agence Crédit Agricole de Corbie pendant 2 ans avec succès tout en développant ses compétences et ses atteintes commerciales de manière progressive. Bonne continuation à toi!<i class="fa-solid fa-quote-right fa-xl ps-3"></i> </p>
+                        
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100000">
+                        <h4 class="title__carosel title__carosel--little">Stéphane WADBLED, Directeur commercial à Rossel Conseil Medias Picardie</h4>
+                        <p class="content__carosel content__carosel--litle"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>J’ai travaillé avec Kevin sur le secteur de Beauvais. C’est un jeune homme brillant qui a su montrer de très bonnes capacités de prospection, d’écoute et de conseil clients. Si je devais résumer sa personnalité en deux mots: calme et efficace. Ce fut un plaisir de travailler avec lui.<i class="fa-solid fa-quote-right fa-xl ps-3"></i> </p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100000">
+                        <h4 class="title__carosel">Hugues DE MIL, Directeur projets clients</h4>
+                        <p class="content__carosel"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>Dans le cadre de ma fonction de Directeur Projet au sein d'une Direction de Fidélisation sur le segment de la Restauration d'Entreprise, Je manage Kevin depuis 2 ans.
+                            Au cours de cette période j'ai pu constater : <br>
+                            Professionnalisme, assiduité, force de proposition, rigueur de travail, disponibilité... <br>
+                            sur l'ensemble des dossiers sur lesquels nous avons pu travailler ensemble.
+                            Je n'aurais qu'un seul regret, la fin d'une collaboration toujours constructive et fructueuse pour nous 2, mais aussi et surtout pour nos Clients.
+                            Je lui souhaite un beau parcours professionnel dans son nouveau challenge...<i class="fa-solid fa-quote-right fa-xl ps-3"></i></p>
+                    </div>
+                    </div>
+                    <div class="place__control-icons">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#recommendations__carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon me-5" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#recommendations__carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon ms-5" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </div>
 </section>

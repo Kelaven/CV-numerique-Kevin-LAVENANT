@@ -324,7 +324,7 @@ hr{
     min-height: 80vh;
 }
 #place__carosel{
-    height: 400px;
+    /* height: 400px; */
 }
 .carousel-indicators{
     top: 350px;
@@ -332,14 +332,14 @@ hr{
 .title__carosel{
     /* padding-left: 130px; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
+    font-size: 22px;
 }
 .content__carosel{
     padding: 40px 130px;
     font-family: 'Roboto', sans-serif;
 }
 .title__carosel--little{
-    padding: 0px 150px 70px;
+    /* padding: 0px 150px 70px; */
 }
 .content__carosel--litle{
     padding: 40px 180px;
@@ -347,7 +347,23 @@ hr{
 #CA__carosel{
     background-image: url("/public/assets/img/logo-credit-agricole.png");
     background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 50%;
+    background-position-y: 23%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*? test de photo de profil */
 /* .phototestcontainer{

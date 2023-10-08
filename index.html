@@ -492,10 +492,10 @@
             </div>
         </div>
         <!-- carousel -->
-        <div id="place__carosel" class="d-flex align-items-center px-5">
+        <div id="place__carosel" class="d-flex align-items-center justify-content-center">
         <div class="row">
-            <div class="col">
-                <div id="recommendations__carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="col p-0">
+                <!-- <div id="recommendations__carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                     <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -503,9 +503,7 @@
                     </div>
                     <div class="carousel-inner text-center">
                     <div class="carousel-item active" data-bs-interval="100000" id="CA__carosel" >
-                        <h4 class="title__carosel title__carosel--little">Jérémy D'HUVETTERE, Directeur d'agence au Credit Agricole</h4>
-                        <!-- <img src="./public/assets/img/logo-credit-agricole.png" alt="logo de la banque Credit Agricole"> -->
-                        <p class="content__carosel content__carosel--litle"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>Kevin, un collaborateur consciencieux, sérieux et professionnel à l’écoute des clients! Kevin a accompagné et partagé la vie de l’agence Crédit Agricole de Corbie pendant 2 ans avec succès tout en développant ses compétences et ses atteintes commerciales de manière progressive. Bonne continuation à toi!<i class="fa-solid fa-quote-right fa-xl ps-3"></i> </p>
+                        <h4 class="title__carosel title__carosel--little">Jérémy D'HUVETTERE, Directeur d'agence au Credit Agricole</h4>                        <p class="content__carosel content__carosel--litle"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>Kevin, un collaborateur consciencieux, sérieux et professionnel à l’écoute des clients! Kevin a accompagné et partagé la vie de l’agence Crédit Agricole de Corbie pendant 2 ans avec succès tout en développant ses compétences et ses atteintes commerciales de manière progressive. Bonne continuation à toi!<i class="fa-solid fa-quote-right fa-xl ps-3"></i> </p>
                         
                     </div>
                     <div class="carousel-item" data-bs-interval="100000">
@@ -532,7 +530,54 @@
                         <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                </div> -->
+
+
+
+
+
+                <div id="recommendations__carousel" class="carousel carousel-dark slide position-relative" data-bs-ride="carousel">
+                    <div class="carousel-indicators position-absolute top-100 pt-4">
+                    <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#recommendations__carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner text-center">
+                    <div class="carousel-item active" data-bs-interval="100000">
+                        <h4 class="title__carosel title__carosel--little pb-5">Jérémy D'HUVETTERE, Directeur d'agence au Crédit Agricole</h4>
+                        <p class="content__carosel content__carosel--litle px-3 pt-5"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>Kévin, un collaborateur consciencieux, sérieux et professionnel à l’écoute des clients ! Kévin a accompagné et partagé la vie de l’agence Crédit Agricole de Corbie pendant 2 ans avec succès tout en développant ses compétences et ses atteintes commerciales de manière progressive. Bonne continuation à toi !<i class="fa-solid fa-quote-right fa-xl ps-3"></i> </p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100000">
+                        <h4 class="title__carosel title__carosel--little pb-5">Stéphane WADBLED, Directeur commercial à Rossel Conseil Medias Picardie</h4>
+                        <p class="content__carosel content__carosel--litle px-4 pt-5"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>J’ai travaillé avec Kévin sur le secteur de Beauvais. C’est un jeune homme brillant qui a su montrer de très bonnes capacités de prospection, d’écoute et de conseil clients. Si je devais résumer sa personnalité en deux mots: calme et efficace. Ce fut un plaisir de travailler avec lui.<i class="fa-solid fa-quote-right fa-xl ps-3"></i> </p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100000">
+                        <h4 class="title__carosel title__carosel--little pb-3">Hugues DE MIL, Directeur <br> projets clients</h4>
+                        <p class="content__carosel content__carosel--litle px-4 pt-3"><i class="fa-solid fa-quote-left fa-xl pe-3"></i>Dans le cadre de ma fonction de Directeur Projet au sein d'une Direction de Fidélisation sur le segment de la Restauration d'Entreprise, Je manage Kevin depuis 2 ans.</br> Au cours de cette période j'ai pu constater : <br>
+                            Professionnalisme, assiduité, force de proposition, rigueur de travail, disponibilité... <br>
+                            sur l'ensemble des dossiers sur lesquels nous avons pu travailler ensemble.
+                            Je n'aurais qu'un seul regret, la fin d'une collaboration toujours constructive et fructueuse pour nous 2, mais aussi et surtout pour nos Clients.
+                            Je lui souhaite un beau parcours professionnel dans son nouveau challenge...<i class="fa-solid fa-quote-right fa-xl ps-3"></i></p>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#recommendations__carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon position-absolute bottom-0 start-0" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#recommendations__carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon position-absolute bottom-0 end-0" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+
+
+
+
+
+
+
+
+
             </div>
         </div>
         </div>

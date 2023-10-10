@@ -277,13 +277,21 @@ hr{
 .logo-container__qualification:hover{
     transform: none;
 }
-/* place image */
-#img1{
+/* place image sans l'animation :*/
+/* #img1{
     position: absolute;
     height: 580px;
     top: 30px;
     right: 260px;
     transform: rotate(0.1turn);
+} */
+/* placer l'image avec l'animation : */
+.img1{
+    position: absolute;
+    height: 600px;
+    top: 10px;
+    left: -225px;
+    transform: rotate(0.1turn); 
 }
 
 /*? Idée OK mais code à faire en Javascript plus tard  */
@@ -323,16 +331,15 @@ hr{
 #recommandations__section{
     min-height: 80vh;
 }
-#place__carosel{
-    /* height: 400px; */
-}
 .carousel-indicators{
     top: 350px;
 }
 .title__carosel{
     /* padding-left: 130px; */
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 22px;
+    color: #212529;
 }
 .content__carosel{
     padding: 40px 130px;
@@ -344,24 +351,43 @@ hr{
 .content__carosel--litle{
     padding: 40px 180px;
 }
-#CA__carosel{
+.CA__carosel{
     background-image: url("/public/assets/img/logo-credit-agricole.png");
     background-repeat: no-repeat;
     background-size: 10%;
     background-position-x: 50%;
-    background-position-y: 23%;
+    height: 100px;
+    width: 1317px;
+    position: absolute;
+    top: 65px;
+}
+.PMP__carosel{
+    background-image: url("/public/assets/img/logo-rossel-conseil-medias-picardie.png");
+    background-repeat: no-repeat;
+    background-size: 14%;
+    background-position-x: 50%;
+    height: 150px;
+    width: 1317px;
+    position: absolute;
+    top: 50px;
+}
+.SODEXO__carosel{
+    background-image: url("/public/assets/img/logo-sodexo.png");
+    background-repeat: no-repeat;
+    background-size: 14%;
+    background-position-x: 50%;
+    height: 150px;
+    width: 1317px;
+    position: absolute;
+    top: 50px;
+}
+.carousel-control-prev-icon{
 }
 
 
-
-
-
-
-
-
-
-
-
+#test{
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
 
 
 

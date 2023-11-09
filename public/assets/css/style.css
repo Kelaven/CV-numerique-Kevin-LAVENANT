@@ -266,56 +266,39 @@ hr{
     width: 450px;
     height: 300px;
     padding: 20px;
-}
-/* cancel transforme and place image */
-.logo-container__qualification{
-    position: relative;
-    overflow: hidden;
-    transition: none;
-    cursor: default;
+    cursor: default; /* delete the cursor's magnifying glass */
 }
 .logo-container__qualification:hover{
-    transform: none;
+    transform: none; /* delete scale animation */
 }
-/* place image sans l'animation :*/
-/* #img1{
-    position: absolute;
-    height: 580px;
-    top: 30px;
-    right: 260px;
-    transform: rotate(0.1turn);
-} */
-/* placer l'image avec l'animation : */
-.img1{
-    position: absolute;
-    height: 600px;
-    top: 10px;
-    left: -225px;
-    transform: rotate(0.1turn); 
+.hat__container{
+    /* size the div to mouseover in JS into all the container */
+    height: 100%;
+    width: 100%;
 }
+.hat__animate-js{ /* to get the call with JS */
+    background-image: url("/public/assets/img/illustration-3d-chapeau-academique.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
 
-/*? Idée OK mais code à faire en Javascript plus tard  */
-/* #img1:hover{    
-    animation: apparition 2.5s;
-} 
-
-@keyframes apparition {
-    from{
-        transform: translateY(100%);
-    }
-    to {
-        transform: rotate(0%);
-    }
-}  */
-
+}
 .logo-container__qualification__title{
     color: #6667AA;
-    /* font-family: font-family: 'Montserrat', sans-serif; */
     font-size: 30px;
     font-weight: bold;
     padding-top: 20px;
+    height: 40%;
 }
-
+.logo-container__qualification__text--replace{
+    height: 50px;
+    padding-top: 13.5vh;
+}
+.logo-container__qualification--ifag, .logo-container__qualification--upjvlicence, .logo-container__qualification--upjvtc{
+    background-image: url("/public/assets/img/couronne-laurier-diplome-gold.png");
+    background-size: 36%;
+    background-position: 50% 75%;;
+    background-repeat: no-repeat;
+}
 /*! portfolio */
 .box-portfolio{
     background-color: #6667AA;

@@ -271,16 +271,35 @@ hr{
 .logo-container__qualification:hover{
     transform: none; /* delete scale animation */
 }
-.hat__container{
+.hat__container, #hat__container__animate-js--laManu{
     /* size the div to mouseover in JS into all the container */
     height: 100%;
     width: 100%;
 }
-.hat__animate-js{ /* to get the call with JS */
-    background-image: url("../img/illustration-3d-chapeau-academique.png");
+.hat__animate-js--test1{ /* to get the call with JS */
+    background-image: url("../img/illustration-3d-chapeau-academique-test1.png");
     background-size: 40%;
     background-repeat: no-repeat;
 }
+.hat__animate-js--test2{ /* to get the call with JS */
+    background-image: url("../img/illustration-3d-chapeau-academique-test2.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.hat__animate-js--test3{ /* to get the call with JS */
+    background-image: url("../img/illustration-3d-chapeau-academique-test3.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.laManu__animate-js{
+    background-image: url("../img/kisspng-digital-marketing-business-service-brand-computer-programming-5a6bfdde14d662.3969596715170267820854.png");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 110% 141% !important;
+}
+/* .animate__animated.animate__backInLeft {
+    --animate-delay: 0.1s;
+  } */
 .logo-container__qualification__title{
     color: #6667AA;
     font-size: 30px;

@@ -1,40 +1,53 @@
 // ! Variables
-// const animateHats = document.querySelectorAll(".hat__container"); // to select the qualification's container (HTML)
+
+// to timeline :
+const allRounds = document.querySelectorAll(".box-timeline__round");
+const allBoxes = document.querySelectorAll(".box-timeline__box");
+const controller = new ScrollMagic.Controller() // create controller with scrollmagic, it's a container for all my animations at scroll which are called scenes
+console.log(allRounds);
+// to qualifications :
+const animateHats = document.querySelectorAll(".hat__container"); // to select the qualification's container (HTML)
 const animateLaManu = document.getElementById("hat__container__animate-js--laManu");
-console.log(animateLaManu);
+
+
 
 // ! Events
-// // * Event to animate the hat into the qualifications' containers
-// document.addEventListener("DOMContentLoaded", function() { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
-//     animateHats.forEach(animateHat => {
-//         animateHat.addEventListener("mouseenter", () => {
-//             animateHat.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
-//         });
-//     });
-// });
+
+// * Event to animate timeline
+allBoxes.forEach(box => {
+    for (let index = 0; index < allRounds.length; index++) { // the loop will iterate through all the circles
+        if (allRounds[index].getAttribute('data-anim') === box.getAttribute('data-anim')) { // if each round attribute is the same than the boxe attribute (thanks to data-anim=1, data-anim=2 etc. in HTML)
+            
+            let tween = gsap.from(box, {y: -50, opacity: 0, duration: 0.5}) // tween is a GSAP animation. I want the box get animation from up to down
+        
+            let scene = new ScrollMagic.Scene({ // create scene thanks to the crontroller 
+                triggerElement: allRounds[index], // my trigger element is the rounds. Trigger is the element which match with the apparition animation of boxes
+                reverse: false // to keep boxes visible event if I scroll in the reverse position
+            })
+            .setTween(tween) // add at the scene the animation created above
+            // .addIndicators() // to see mark of trigger's fonctionnement, I can comment this line after to remove their visibilies
+            .addTo(controller) // to add the scene at the controller
+        }
+    }
+}); // So, when I find the round wich match with the box, I create a animation for this box (with tween).
+    // The scene allows the animation to appear in one moment - one triggerElement (=élément déclencheur). 
+    // Here the trigger element is the round which match with the boxe (thanks to their same attribute). 
+    // After that, I add the tween at the scene to launch this tween (=animation) when I scroll until the triggerElement. 
+    // NB : even if I create a scene, I have to add it at the controller (with addTo).     
+
+
+
+// * Event to animate the hat into the qualifications' containers
+document.addEventListener("DOMContentLoaded", function() { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
+    animateHats.forEach(animateHat => {
+        animateHat.addEventListener("mouseenter", () => {
+            animateHat.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
+        });
+    });
+});
+
 
 // * Event to animate LaManu container
 animateLaManu.addEventListener("mouseenter", () => {
     animateLaManu.classList.add('laManu__animate-js', 'animate__animated', 'animate__backInUp');
-})
-
-
-
-
-const animateTest1 = document.getElementById("test1");
-console.log(animateTest1);
-animateTest1.addEventListener("pointerenter", () => {
-    animateTest1.classList.add('hat__animate-js--test1', 'animate__animated', 'animate__backInLeft')
-})
-
-const animateTest2 = document.getElementById("test2");
-console.log(animateTest2);
-animateTest2.addEventListener("mousemove", () => {
-    animateTest2.classList.add('hat__animate-js--test2', 'animate__animated', 'animate__backInLeft')
-})
-
-const animateTest3 = document.getElementById("test3");
-console.log(animateTest3);
-animateTest3.addEventListener("pointermove", () => {
-    animateTest3.classList.add('hat__animate-js--test3', 'animate__animated', 'animate__backInLeft')
-})
+});

@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--* my style page -->
     <link rel="stylesheet" href="./public/assets/css/style.css" type="text/css">
-    <!--* font awesome -->
-    <script src="https://kit.fontawesome.com/dce61209e7.js" crossorigin="anonymous"></script>
     <!--* animate style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
@@ -322,61 +320,51 @@
                     <!-- time line -->
                     <div class="box-timeline__line"></div>
                     <!-- icons cercles -->
-                    <div class="box-timeline__round box-timeline__round--r1 rounded-circle">
-                        <!-- <i class="fa-solid fa-sack-dollar box-timeline__round__logo"></i> -->
-                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/bank-building.png" alt="bank-building"/> -->
+                    <div class="box-timeline__round box-timeline__round--r1 rounded-circle" data-anim="1"> <!-- data-anim is a global attribute to match with boxes and get animation -->
                         <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/bank-cards.png" alt="bank-cards"/>
                     </div>
-                    <div class="box-timeline__round box-timeline__round--r2 rounded-circle">
-                        <!-- <i class="fa-solid fa-newspaper box-timeline__round__logo"></i> -->
-                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/newspaper-.png" alt="newspaper-"/> -->
+                    <div class="box-timeline__round box-timeline__round--r2 rounded-circle" data-anim="2">
                         <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/news.png" alt="news"/>
                     </div>
-                    <div class="box-timeline__round box-timeline__round--r3 rounded-circle">
-                        <!-- <i class="fa-solid fa-utensils box-timeline__round__logo"></i> -->
-                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/meal.png" alt="meal"/> -->
+                    <div class="box-timeline__round box-timeline__round--r3 rounded-circle" data-anim="3">
                         <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/tableware.png" alt="tableware"/>
                     </div>
-                    <div class="box-timeline__round box-timeline__round--r4 rounded-circle">
-                        <!-- <i class="fa-solid fa-shop box-timeline__round__logo"></i> -->
-                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/market.png" alt="market"/> -->
+                    <div class="box-timeline__round box-timeline__round--r4 rounded-circle" data-anim="4">
                         <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/shopping-cart-loaded.png" alt="shopping-cart-loaded"/>
                     </div>
-                    <div class="box-timeline__round box-timeline__round--r5 rounded-circle">
-                        <!-- <i class="fa-solid fa-door-open box-timeline__round__logo"></i> -->
-                        <!-- <img width="48" height="48" src="https://img.icons8.com/pulsar-color/48/retirement.png" alt="retirement"/> -->
+                    <div class="box-timeline__round box-timeline__round--r5 rounded-circle" data-anim="5">
                         <img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/home.png" alt="home"/>
                     </div>
                     <!-- description boxes -->
-                    <div class="box-timeline__box box-timeline__box--b1">
+                    <div class="box-timeline__box box-timeline__box--b1" data-anim="1"> <!-- to match with rounds and get animation. So boxes will appears when we scroll untill the rounds -->
                         <h4 class="box-timeline__job-title">Conseiller bancaire - Crédit Agricole</h4>
                         <p class="paragraph-txt">
                             <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
                         </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
-                    <div class="box-timeline__box box-timeline__box--b2">
+                    <div class="box-timeline__box box-timeline__box--b2" data-anim="2">
                         <h4 class="box-timeline__job-title" >Lorem, ipsum.</h4>
                         <p class="paragraph-txt">
                             <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
                         </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
-                    <div class="box-timeline__box box-timeline__box--b3">
+                    <div class="box-timeline__box box-timeline__box--b3" data-anim="3">
                         <h4 class="box-timeline__job-title">Lorem, ipsum.</h4>
                         <p class="paragraph-txt">
                             <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
                         </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
-                    <div class="box-timeline__box box-timeline__box--b4">
+                    <div class="box-timeline__box box-timeline__box--b4" data-anim="4">
                         <h4 class="box-timeline__job-title">Lorem, ipsum.</h4>
                         <p class="paragraph-txt">
                             <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
                         </p>
                         <p class="paragraph-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus laboriosam voluptatem quae earum quidem? Sed, nesciunt aperiam eius numquam aspernatur corporis nulla minima magnam?</p>
                     </div>
-                    <div class="box-timeline__box box-timeline__box--b5">
+                    <div class="box-timeline__box box-timeline__box--b5" data-anim="5">
                         <h4 class="box-timeline__job-title" >Lorem, ipsum.</h4>
                         <p class="paragraph-txt">
                             <i class="fa-solid fa-clock pe-1"></i> 2019 - 2023
@@ -444,7 +432,7 @@
             </div>
             <div class="col-11 col-md-6 p-0 d-flex justify-content-center py-4">
                 <div class="logo-container logo-container__qualification logo-container__qualification--ifag d-flex justify-content-center">
-                    <div class="hat__container" id="test1"></div> <!-- ! div to mouseover in JS  -->
+                    <div class="hat__container"></div> <!-- ! div to mouseover in JS  -->
                     <h4 class="logo-container__qualification__title position-absolute z-1">Ifag</h4>
                     <div class="logo-container__qualification__text logo-container__qualification__text--replace position-absolute z-1 text-center">
                         <p>Master Gestion d’Entreprise et tout ça</p>
@@ -454,7 +442,7 @@
             </div>
             <div class="col-11 col-md-6 p-0 d-flex justify-content-center py-4">
                 <div class="logo-container logo-container__qualification logo-container__qualification--upjvlicence d-flex justify-content-center">
-                    <div class="hat__container" id="test2"></div> 
+                    <div class="hat__container"></div> 
                     <h4 class="logo-container__qualification__title position-absolute z-1">Upjv Licence</h4>
                     <div class="logo-container__qualification__text logo-container__qualification__text--replace position-absolute z-1 text-center">
                         <p>Licence Commerce et Commerce International</p>
@@ -464,7 +452,7 @@
             </div>
             <div class="col-11 col-md-6 p-0 d-flex justify-content-center py-4 mb-5">
                 <div class="logo-container logo-container__qualification logo-container__qualification--upjvtc d-flex justify-content-center">
-                    <div class="hat__container" id="test3"></div> 
+                    <div class="hat__container"></div> 
                     <h4 class="logo-container__qualification__title position-absolute z-1" >Upjv tc</h4>
                     <div class="logo-container__qualification__text logo-container__qualification__text--replace position-absolute z-1 text-center">
                         <p>DUT Techniques de Commercialisation</p>
@@ -606,8 +594,19 @@
 
 
 
+
+
+
+    <!--* font awesome -->
+    <script src="https://kit.fontawesome.com/dce61209e7.js" crossorigin="anonymous"></script>
     <!--* script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--* GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!--* scrollmagic  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <!--* my javascript -->
     <script src="./public/assets/js/script.js"></script>
 </body>

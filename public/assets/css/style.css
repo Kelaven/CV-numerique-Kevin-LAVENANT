@@ -276,18 +276,8 @@ hr{
     height: 100%;
     width: 100%;
 }
-.hat__animate-js--test1{ /* to get the call with JS */
+.hat__animate-js{ /* to get the call with JS */
     background-image: url("../img/illustration-3d-chapeau-academique-test1.png");
-    background-size: 40%;
-    background-repeat: no-repeat;
-}
-.hat__animate-js--test2{ /* to get the call with JS */
-    background-image: url("../img/illustration-3d-chapeau-academique-test2.png");
-    background-size: 40%;
-    background-repeat: no-repeat;
-}
-.hat__animate-js--test3{ /* to get the call with JS */
-    background-image: url("../img/illustration-3d-chapeau-academique-test3.png");
     background-size: 40%;
     background-repeat: no-repeat;
 }

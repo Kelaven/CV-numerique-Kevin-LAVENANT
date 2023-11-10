@@ -127,7 +127,7 @@ hr{
             5px 5px 20px #bcbcbc,
             -5px -5px 20px #fefefe;
     transition: transform .5s;
-    cursor: url("/public/assets/img/icon-zoom-in.png"), zoom-in;
+    cursor: url("../img/icon-zoom-in.png"), zoom-in;
 }
 .logo-container:hover{
     transform: scale(1.1);
@@ -277,7 +277,7 @@ hr{
     width: 100%;
 }
 .hat__animate-js{ /* to get the call with JS */
-    background-image: url("/public/assets/img/illustration-3d-chapeau-academique.png");
+    background-image: url("../img/illustration-3d-chapeau-academique.png");
     background-size: 40%;
     background-repeat: no-repeat;
 }
@@ -293,7 +293,7 @@ hr{
     padding-top: 13.5vh;
 }
 .logo-container__qualification--ifag, .logo-container__qualification--upjvlicence, .logo-container__qualification--upjvtc{
-    background-image: url("/public/assets/img/couronne-laurier-diplome-gold.png");
+    background-image: url("../img/couronne-laurier-diplome-gold.png");
     background-size: 36%;
     background-position: 50% 75%;;
     background-repeat: no-repeat;
@@ -334,7 +334,7 @@ hr{
     padding: 40px 180px;
 }
 .CA__carosel{
-    background-image: url("/public/assets/img/logo-credit-agricole.png");
+    background-image: url("../img/logo-credit-agricole.png");
     background-repeat: no-repeat;
     background-size: 10%;
     background-position-x: 50%;
@@ -344,7 +344,7 @@ hr{
     top: 65px;
 }
 .PMP__carosel{
-    background-image: url("/public/assets/img/logo-rossel-conseil-medias-picardie.png");
+    background-image: url("../img/logo-rossel-conseil-medias-picardie.png");
     background-repeat: no-repeat;
     background-size: 14%;
     background-position-x: 50%;
@@ -354,7 +354,7 @@ hr{
     top: 50px;
 }
 .SODEXO__carosel{
-    background-image: url("/public/assets/img/logo-sodexo.png");
+    background-image: url("../img/logo-sodexo.png");
     background-repeat: no-repeat;
     background-size: 14%;
     background-position-x: 50%;

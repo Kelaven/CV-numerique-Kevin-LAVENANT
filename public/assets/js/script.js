@@ -70,3 +70,24 @@ appearsTextsContainers.forEach(appearTextContainer => {
         });
     });
 });
+
+
+
+const footerLogos = document.querySelectorAll(".footer-logos")
+console.log(footerLogos);
+
+function animaterFooter() {
+    gsap.fromTo(footerLogos, { y : 0}, {y : -110, // it's like tranform : translateY(); in CSS
+    //     // ease : "bounce", // crescendo effect
+    duration : 1, // the animation's duration
+    stagger : {  // decalage time between each logos, so I create object. Thanks to this object, the stagger operate beetwen each logo
+        each : 0.1 , // decalage time
+        repeat : 5,
+        yoyo : true, // to come back
+        from : "center" // to get the animation effect from the center element
+    }
+})
+}
+
+
+animaterFooter()

@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./public/assets/css/style.css" type="text/css">
     <!--* animate style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--* AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -477,14 +479,22 @@
         </div>
         <!-- blocks -->
         <div class="row justify-content-center">
-            <div class="col-12 pb-4">
-                <div class="box-portfolio">
-                    
+            <!-- block 1 : personnal website project -->
+            <div class="col-12 col-lg-4 pb-4 pe-4">
+                <div class="box-portfolio p-0 text-center" id="box-portfolio--1">
+                    <p class="m-0 box-portfolio--animation d-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore vitae a rerum, quibusdam iure, exercitationem aliquid quod, eos totam quidem nesciunt fugit ut voluptatem aut minima iusto quaerat tempora sed dolorem ratione maxime. Quaerat, reiciendis obcaecati ipsa blanditiis aperiam ducimus veritatis laborum quam enim atque quas amet quo quia tempora.</p>
                 </div>
             </div>
-            <div class="col-12 pb-5">
-                <div class="box-portfolio">
-
+            <!-- block 2 : jdp project -->
+            <div class="col-12 col-lg-4 pb-5 px-4">
+                <div class="box-portfolio p-0 text-center" id="box-portfolio--2">
+                    <p class="m-0 box-portfolio--animation d-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore vitae a rerum, quibusdam iure, exercitationem aliquid quod, eos totam quidem nesciunt fugit ut voluptatem aut minima iusto quaerat tempora sed dolorem ratione maxime. Quaerat, reiciendis obcaecati ipsa blanditiis aperiam ducimus veritatis laborum quam enim atque quas amet quo quia tempora.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 pb-5 ps-4">
+                <!-- block 3 : TMMDB project -->
+                <div class="box-portfolio p-0 text-center" id="box-portfolio--3">
+                    <p class="m-0 box-portfolio--animation d-none">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore vitae a rerum, quibusdam iure, exercitationem aliquid quod, eos totam quidem nesciunt fugit ut voluptatem aut minima iusto quaerat tempora sed dolorem ratione maxime. Quaerat, reiciendis obcaecati ipsa blanditiis aperiam ducimus veritatis laborum quam enim atque quas amet quo quia tempora.</p>
                 </div>
             </div>
         </div>
@@ -548,7 +558,7 @@
     </div>
 </section>
 <!--! hobbies  -->
-<section>
+<!-- <section>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -563,10 +573,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!--! footer  -->
-<footer class="colored-section">
+<footer>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -607,6 +617,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!--* AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!--* my javascript -->
     <script src="./public/assets/js/script.js"></script>
 </body>

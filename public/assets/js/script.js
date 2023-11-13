@@ -4,10 +4,12 @@
 const allRounds = document.querySelectorAll(".box-timeline__round");
 const allBoxes = document.querySelectorAll(".box-timeline__box");
 const controller = new ScrollMagic.Controller() // create controller with scrollmagic, it's a container for all my animations at scroll which are called scenes
-console.log(allRounds);
 // to qualifications :
 const animateHats = document.querySelectorAll(".hat__container"); // to select the qualification's container (HTML)
 const animateLaManu = document.getElementById("hat__container__animate-js--laManu");
+// to portfolio :
+const appearsTexts = document.querySelectorAll(".box-portfolio--animation");
+const appearsTextsContainers = document.querySelectorAll(".box-portfolio");
 
 
 
@@ -38,7 +40,7 @@ allBoxes.forEach(box => {
 
 
 // * Event to animate the hat into the qualifications' containers
-document.addEventListener("DOMContentLoaded", function() { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
+document.addEventListener("DOMContentLoaded", () => { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
     animateHats.forEach(animateHat => {
         animateHat.addEventListener("mouseenter", () => {
             animateHat.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
@@ -46,8 +48,25 @@ document.addEventListener("DOMContentLoaded", function() { // add event with DOM
     });
 });
 
-
 // * Event to animate LaManu container
 animateLaManu.addEventListener("mouseenter", () => {
     animateLaManu.classList.add('laManu__animate-js', 'animate__animated', 'animate__backInUp');
+});
+
+
+
+// * Event to animate portfolio
+appearsTextsContainers.forEach(appearTextContainer => {
+    // apparition animation
+    appearTextContainer.addEventListener("mouseenter", () => {
+        appearsTexts.forEach(appearText => {
+            appearText.classList.remove('d-none'); // d-none initiaze with bootstrap
+        });
+    });
+    // disapparition animation
+    appearTextContainer.addEventListener("mouseleave", () => {
+        appearsTexts.forEach(appearText => {
+            appearText.classList.add('box-portfolio--disappear'); // class created in CSS
+        });
+    });
 });

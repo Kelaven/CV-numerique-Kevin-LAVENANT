@@ -309,13 +309,65 @@ hr{
 }
 /*! portfolio */
 .box-portfolio{
-    background-color: #6667AA;
+    /* to design : */
     height: 355px;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding: 20px;
+    overflow: hidden; /* to contains the text in mobile */
+    display: flex;
+    align-items: end;
 }
-
+.box-portfolio p{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 2% 2%;
+}
+/* to animate the text apparition : */
+.box-portfolio:hover p{
+    animation: slideUp 1s;    
+}
+@keyframes slideUp {
+    from{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+/* ? GARDER OU PAS ? QUAND LA SOURIS QUITTE LE CONTAINER LES ECRITURES SE RETIRENT */
+.box-portfolio--disappear{ /* class for JS */
+    animation: slideNoUp 1s forwards;
+}
+@keyframes slideNoUp {
+    from{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+}
+#box-portfolio--1{
+    background-image: url("../img/normandie-france-sunset-on-beach-picture-1920-50.jpg");
+    background-size: cover;
+    background-position: 50% 30%;
+}
+#box-portfolio--2{
+    background-image: url("../img/pixel-art-wallpaper-hangman-western-7.jpg");
+    background-size: cover;
+    background-position: 0% 45%;
+}
+#box-portfolio--3{
+    background-image: url("../img/movie-database-javascript-fetch-project.png");
+    background-size: cover;
+    background-position: 50%;
+}
 
 /*! recommendations */
 

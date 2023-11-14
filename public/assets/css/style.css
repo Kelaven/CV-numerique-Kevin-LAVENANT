@@ -1,4 +1,4 @@
-/*! global setting */
+/*! global settings */
 html body{
     background-color: #FCFCFC;
 }
@@ -326,7 +326,10 @@ hr{
     padding: 2% 2%;
 }
 /* to animate the text apparition : */
-.box-portfolio:hover p{
+/* .box-portfolio:hover p{
+    animation: slideUp 1s;    
+} */
+.box-portfolio--appear{
     animation: slideUp 1s;    
 }
 @keyframes slideUp {

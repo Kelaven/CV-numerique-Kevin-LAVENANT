@@ -57,22 +57,40 @@ animateLaManu.addEventListener("mouseenter", () => {
 
 // * Event to animate portfolio
 appearsTextsContainers.forEach(appearTextContainer => {
-    // apparition animation
-    appearTextContainer.addEventListener("mouseenter", () => {
-        appearsTexts.forEach(appearText => {
-            appearText.classList.remove('d-none'); // d-none initiaze with bootstrap
-        });
+    // Apparition animation
+    appearTextContainer.addEventListener("mouseenter", (e) => { // "e" is the object of the event wich contains informations about this event like the target ("e.target")
+        const idShow = e.target.id; // to get ID of the element I over with the mouse (text's container)
+        console.log(idShow);
+        const idShow1 = document.querySelector(`[data-id-show="${idShow}"]`); // to select the element (<p>) with the attribute "data-id-show" overs precedently : in HTML, I have an ID named box-portfolio--1 and the same for the dataset
+        console.log(idShow1);
+        // so idShow get the id of the container I overs. Then idShow1 associate this id with the dataset of the div wich have the same value. So I can use my class
+        if (idShow1) { // if it's true
+            idShow1.classList.remove('d-none');
+            // select CSS created class :
+            idShow1.classList.remove('box-portfolio--disappear'); // to reset the class disappear
+            idShow1.classList.add('box-portfolio--appear')
+        }
     });
-    // disapparition animation
-    appearTextContainer.addEventListener("mouseleave", () => {
-        appearsTexts.forEach(appearText => {
-            appearText.classList.add('box-portfolio--disappear'); // class created in CSS
-        });
+    // Disappearance animation
+    appearTextContainer.addEventListener("mouseleave", (e) => {
+        const idHide = e.target.id;
+        const idHide1 = document.querySelector(`[data-id-show="${idHide}"]`);
+        if (idHide1) {
+            idHide1.classList.remove('box-portfolio--appear'); // to reset the class appear
+            idHide1.classList.add('box-portfolio--disappear');
+        }
     });
+    // NB : I can use the event "animationend" if I need to detect the animation's end.
+    // Then, I can reset CSS class into the function to repeat the entire animation.
 });
 
 
 
+
+
+
+
+// ? to animate footer
 const footerLogos = document.querySelectorAll(".footer-logos")
 console.log(footerLogos);
 

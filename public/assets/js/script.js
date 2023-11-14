@@ -42,8 +42,14 @@ allBoxes.forEach(box => {
 // * Event to animate the hat into the qualifications' containers
 document.addEventListener("DOMContentLoaded", () => { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
     animateHats.forEach(animateHat => {
-        animateHat.addEventListener("mouseenter", () => {
-            animateHat.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
+        animateHat.addEventListener("mouseenter", (e) => {
+            const idAppear = e.target.id;
+            console.log(idAppear);
+            const idAppear1 = document.querySelector(`[data-anim-hat="${idAppear}"]`);
+            console.log(idAppear1);
+            if (idAppear1) {
+                idAppear1.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
+            }
         });
     });
 });
@@ -52,6 +58,14 @@ document.addEventListener("DOMContentLoaded", () => { // add event with DOMConte
 animateLaManu.addEventListener("mouseenter", () => {
     animateLaManu.classList.add('laManu__animate-js', 'animate__animated', 'animate__backInUp');
 });
+
+
+
+
+
+
+
+
 
 
 

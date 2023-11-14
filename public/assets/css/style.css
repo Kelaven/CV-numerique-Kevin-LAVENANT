@@ -326,9 +326,6 @@ hr{
     padding: 2% 2%;
 }
 /* to animate the text apparition : */
-/* .box-portfolio:hover p{
-    animation: slideUp 1s;    
-} */
 .box-portfolio--appear{
     animation: slideUp 1s;    
 }
@@ -342,7 +339,6 @@ hr{
         opacity: 1;
     }
 }
-/* ? GARDER OU PAS ? QUAND LA SOURIS QUITTE LE CONTAINER LES ECRITURES SE RETIRENT */
 .box-portfolio--disappear{ /* class for JS */
     animation: slideNoUp 1s forwards;
 }

@@ -30,8 +30,16 @@ h4{
 
 /***! header ***/
 
-header{
-    min-height: 100vh;
+
+@media screen and (max-width: 1024px) { /* to be responsive at tablet */
+    header{
+        min-height: 72vh;
+    }
+}
+@media screen and (min-width: 1025px) {
+    header{
+        min-height: 100vh;
+    }
 }
 hr{
     border-bottom: solid 1.5px;
@@ -414,14 +422,21 @@ hr{
 
 /*! recommendations */
 
-#recommandations__section{
-    min-height: 80vh;
-}
 @media screen and (max-width: 375px){
     #recommandations__section{
         height: 100vh;
     }
-};
+}
+@media screen and (min-width: 376px) and (max-width: 1024px){
+    #recommandations__section{
+        height: 60vh;
+    }
+} 
+@media screen and (min-width: 1025px){
+    #recommandations__section{
+        min-height: 80vh;
+    }
+}
 .carousel-indicators{
     top: 350px;
 }
@@ -448,7 +463,7 @@ hr{
     background-size: 10%;
     background-position-x: 50%;
     height: 100px;
-    width: 1317px;
+    width: 100%;
     position: absolute;
     top: 65px;
 }
@@ -458,7 +473,7 @@ hr{
     background-size: 14%;
     background-position-x: 50%;
     height: 150px;
-    width: 1317px;
+    width: 100%;
     position: absolute;
     top: 50px;
 }
@@ -468,7 +483,7 @@ hr{
     background-size: 14%;
     background-position-x: 50%;
     height: 150px;
-    width: 1317px;
+    width: 100%;
     position: absolute;
     top: 50px;
 }

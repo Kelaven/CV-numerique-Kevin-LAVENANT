@@ -417,6 +417,11 @@ hr{
 #recommandations__section{
     min-height: 80vh;
 }
+@media screen and (max-width: 375px){
+    #recommandations__section{
+        height: 100vh;
+    }
+};
 .carousel-indicators{
     top: 350px;
 }

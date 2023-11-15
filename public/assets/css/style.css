@@ -255,7 +255,8 @@ hr{
     box-shadow: 4px 4px 9px #c6c6c6,
                 -4px -4px 9px #fff;
     padding: 20px;
-    width: 350px;
+    /* width: 350px; */
+    max-width: 100%;
 }
 
 /*! qualifications */

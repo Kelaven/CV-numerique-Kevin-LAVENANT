@@ -10,6 +10,10 @@ const animateLaManu = document.getElementById("hat__container__animate-js--laMan
 // to portfolio :
 const appearsTexts = document.querySelectorAll(".box-portfolio--animation");
 const appearsTextsContainers = document.querySelectorAll(".box-portfolio");
+// to footer : 
+const footerLogos = document.querySelectorAll(".footer-logos")
+const controller2 = new ScrollMagic.Controller();
+const triggerHTML = document.getElementById("footer__title");
 
 
 
@@ -42,7 +46,7 @@ allBoxes.forEach(box => {
 // * Event to animate the hat into the qualifications' containers
 document.addEventListener("DOMContentLoaded", () => { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
     animateHats.forEach(animateHat => {
-        animateHat.addEventListener("mouseenter", (e) => {
+        animateHat.addEventListener("mousemove", function appearAtOver(e) {
             const idAppear = e.target.id;
             console.log(idAppear);
             const idAppear1 = document.querySelector(`[data-anim-hat="${idAppear}"]`);
@@ -54,17 +58,11 @@ document.addEventListener("DOMContentLoaded", () => { // add event with DOMConte
     });
 });
 
+
 // * Event to animate LaManu container
-animateLaManu.addEventListener("mouseenter", () => {
+animateLaManu.addEventListener("mousemove", () => {
     animateLaManu.classList.add('laManu__animate-js', 'animate__animated', 'animate__backInUp');
 });
-
-
-
-
-
-
-
 
 
 
@@ -101,25 +99,25 @@ appearsTextsContainers.forEach(appearTextContainer => {
 
 
 
-
-
-
-// ? to animate footer
-const footerLogos = document.querySelectorAll(".footer-logos")
-console.log(footerLogos);
-
-function animaterFooter() {
-    gsap.fromTo(footerLogos, { y : 0}, {y : -110, // it's like tranform : translateY(); in CSS
-    //     // ease : "bounce", // crescendo effect
-    duration : 1, // the animation's duration
-    stagger : {  // decalage time between each logos, so I create object. Thanks to this object, the stagger operate beetwen each logo
-        each : 0.1 , // decalage time
-        repeat : 5,
-        yoyo : true, // to come back
-        from : "center" // to get the animation effect from the center element
-    }
+// * Event to animate footer
+let scene2 = new ScrollMagic.Scene({
+    triggerElement: triggerHTML,
+    triggerHook: 1, // to launch animation the begin of the section I scroll
+    // reverse: false,
 })
+.setTween(gsap.fromTo(footerLogos, { y : 0}, {y : -110, // it's like tranform : translateY(); in CSS
+//     // ease : "bounce", // crescendo effect
+duration : 0.5, // the animation's duration
+stagger : {  // decalage time between each logos, so I create object. Thanks to this object, the stagger operate beetwen each logo
+    each : 0.1 , // decalage time
+    repeat : 3,
+    yoyo : true, // to come back
+    from : "center" // to get the animation effect from the center element
 }
+}))
+.addTo(controller2);
 
 
-animaterFooter()
+
+
+

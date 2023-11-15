@@ -342,14 +342,14 @@ hr{
     background-size: 36%;
     background-position: 50% 75%;;
     background-repeat: no-repeat;
-    /* background-color: red; */
 }
 .logo-container__qualification--ifag img, .logo-container__qualification--upjvlicence img, .logo-container__qualification--upjvtc img{
     height: 120px;
 }
 .logo-container__qualification--lamanu img{
-    height: 400px;
-    padding-top: 5em;
+    /* height: 400px; */
+    position: relative;
+    top: 110px;
 }
 /*! portfolio */
 .box-portfolio{

@@ -4,9 +4,6 @@
 const allRounds = document.querySelectorAll(".box-timeline__round");
 const allBoxes = document.querySelectorAll(".box-timeline__box");
 const controller = new ScrollMagic.Controller() // create controller with scrollmagic, it's a container for all my animations at scroll which are called scenes
-// to qualifications :
-const animateHats = document.querySelectorAll(".hat__container"); // to select the qualification's container (HTML)
-const animateLaManu = document.getElementById("hat__container__animate-js--laManu");
 // to portfolio :
 const appearsTexts = document.querySelectorAll(".box-portfolio--animation");
 const appearsTextsContainers = document.querySelectorAll(".box-portfolio");
@@ -14,7 +11,9 @@ const appearsTextsContainers = document.querySelectorAll(".box-portfolio");
 const footerLogos = document.querySelectorAll(".footer-logos")
 const controller2 = new ScrollMagic.Controller();
 const triggerHTML = document.getElementById("footer__title");
-
+// ? to qualifications :
+// const animateHats = document.querySelectorAll(".hat__container"); // to select the qualification's container (HTML)
+// const animateLaManu = document.getElementById("hat__container__animate-js--laManu");
 
 
 // ! Events
@@ -40,29 +39,6 @@ allBoxes.forEach(box => {
     // Here the trigger element is the round which match with the boxe (thanks to their same attribute). 
     // After that, I add the tween at the scene to launch this tween (=animation) when I scroll until the triggerElement. 
     // NB : even if I create a scene, I have to add it at the controller (with addTo).     
-
-
-
-// * Event to animate the hat into the qualifications' containers
-document.addEventListener("DOMContentLoaded", () => { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
-    animateHats.forEach(animateHat => {
-        animateHat.addEventListener("mousemove", function appearAtOver(e) {
-            const idAppear = e.target.id;
-            console.log(idAppear);
-            const idAppear1 = document.querySelector(`[data-anim-hat="${idAppear}"]`);
-            console.log(idAppear1);
-            if (idAppear1) {
-                idAppear1.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
-            }
-        });
-    });
-});
-
-
-// * Event to animate LaManu container
-animateLaManu.addEventListener("mousemove", () => {
-    animateLaManu.classList.add('laManu__animate-js', 'animate__animated', 'animate__backInUp');
-});
 
 
 
@@ -117,6 +93,28 @@ stagger : {  // decalage time between each logos, so I create object. Thanks to 
 }))
 .addTo(controller2);
 
+
+
+
+// ? Event to animate the hat into the qualifications' containers
+// document.addEventListener("DOMContentLoaded", () => { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
+//     animateHats.forEach(animateHat => {
+//         animateHat.addEventListener("mousemove", function appearAtOver(e) {
+//             const idAppear = e.target.id;
+//             console.log(idAppear);
+//             const idAppear1 = document.querySelector(`[data-anim-hat="${idAppear}"]`);
+//             console.log(idAppear1);
+//             if (idAppear1) {
+//                 idAppear1.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
+//             }
+//         });
+//     });
+// });
+
+// ? Event to animate LaManu container
+// animateLaManu.addEventListener("mousemove", () => {
+//     animateLaManu.classList.add('laManu__animate-js', 'animate__animated', 'animate__backInUp');
+// });
 
 
 

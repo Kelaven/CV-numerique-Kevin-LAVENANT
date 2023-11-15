@@ -38,10 +38,45 @@ hr{
     color: #8e8e8e;
 }
 /* profile picture */
+.shine {
+	position: relative;
+}
+.shine::before {
+	position: absolute;
+	top: 20;
+	left: -30%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 20%;
+	height: 87%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.shine:hover::before {
+	-webkit-animation: shine 2s;
+	animation: shine 2s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
 .profilpic{
     height: 315px;
     width: 315px;
     object-fit: cover;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow:  3px 3px 5px #c6c6c6,
+    -3px -3px 5px #ffffff;
 }
 /* tall text */
 .title{
@@ -62,7 +97,7 @@ hr{
 .my-btn{
     background-color: #6667AA;
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 10px 15px;
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     transition: transform .5s;
@@ -88,7 +123,7 @@ hr{
 .fa-chevron-down{
     animation: slideDown 2s forwards;
     animation-delay: 1s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 5;
     color: #6667AA;
 }
 @keyframes slideDown {
@@ -278,15 +313,15 @@ hr{
     width: 100%;
 }
 .hat__animate-js{ /* to get the call with JS */
-    background-image: url("../img/illustration-3d-chapeau-academique-test1.png");
+    /* background-image: url("../img/illustration-3d-chapeau-academique-test1.png");
     background-size: 40%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 .laManu__animate-js{
-    background-image: url("../img/kisspng-digital-marketing-business-service-brand-computer-programming-5a6bfdde14d662.3969596715170267820854.png");
+    /* background-image: url("../img/kisspng-digital-marketing-business-service-brand-computer-programming-5a6bfdde14d662.3969596715170267820854.png");
     background-size: 45%;
     background-repeat: no-repeat;
-    background-position: 110% 141% !important;
+    background-position: 110% 141% !important; */
 }
 /* .animate__animated.animate__backInLeft {
     --animate-delay: 0.1s;
@@ -307,6 +342,14 @@ hr{
     background-size: 36%;
     background-position: 50% 75%;;
     background-repeat: no-repeat;
+    /* background-color: red; */
+}
+.logo-container__qualification--ifag img, .logo-container__qualification--upjvlicence img, .logo-container__qualification--upjvtc img{
+    height: 120px;
+}
+.logo-container__qualification--lamanu img{
+    height: 400px;
+    padding-top: 5em;
 }
 /*! portfolio */
 .box-portfolio{

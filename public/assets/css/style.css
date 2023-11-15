@@ -38,7 +38,7 @@ h4{
 }
 @media screen and (min-width: 1025px) {
     header{
-        min-height: 100vh;
+        min-height: 90vh;
     }
 }
 hr{
@@ -127,6 +127,7 @@ hr{
 .paragraph-txt{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    width: 95%;
 }
 /* arrow down animation */
 .fa-chevron-down{
@@ -143,6 +144,11 @@ hr{
     to{
         transform: translateY(4px);
         opacity: 0.3;
+    }
+}
+@media screen and (min-height: 850px) {
+    .fa-chevron-down{
+        padding-top: 3em !important;
     }
 }
 

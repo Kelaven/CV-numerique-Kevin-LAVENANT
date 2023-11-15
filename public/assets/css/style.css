@@ -81,6 +81,7 @@ hr{
     height: 315px;
     width: 315px;
     object-fit: cover;
+    object-position: 50% 45%;
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
     box-shadow:  3px 3px 5px #c6c6c6,

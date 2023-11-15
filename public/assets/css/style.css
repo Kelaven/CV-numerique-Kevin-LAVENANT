@@ -46,6 +46,16 @@ hr{
     color: #8e8e8e;
 }
 /* profile picture */
+.profilpic{
+    height: 315px;
+    width: 315px;
+    object-fit: cover;
+    object-position: 50% 45%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow:  5px 5px 7px #c6c6c6,
+    -5px -5px 7px #ffffff;
+}
 .shine {
 	position: relative;
 }
@@ -76,16 +86,6 @@ hr{
 	100% {
 		left: 125%;
 	}
-}
-.profilpic{
-    height: 315px;
-    width: 315px;
-    object-fit: cover;
-    object-position: 50% 45%;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-    box-shadow:  3px 3px 5px #c6c6c6,
-    -3px -3px 5px #ffffff;
 }
 /* tall text */
 .title{

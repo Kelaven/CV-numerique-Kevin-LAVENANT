@@ -348,18 +348,26 @@ hr{
     padding-top: 20px;
     height: 40%;
 }
+.logo-container__qualification__img{
+    /* padding-right: 300px; */
+}
 .logo-container__qualification__text--replace{
     height: 50px;
     padding-top: 13.5vh;
+    width: 350px;
+    font-family: 'Roboto', sans-serif;
+    /* text-transform: uppercase; */
+    font-size: 0.95em;
 }
 .logo-container__qualification--ifag, .logo-container__qualification--upjvlicence, .logo-container__qualification--upjvtc{
-    background-image: url("../img/couronne-laurier-diplome-gold.png");
+    background-image: url("../img/couronne-laurier-diplome-gold-transparent.png");
     background-size: 36%;
     background-position: 50% 75%;;
     background-repeat: no-repeat;
 }
 .logo-container__qualification--ifag img, .logo-container__qualification--upjvlicence img, .logo-container__qualification--upjvtc img{
     height: 120px;
+    
 }
 .logo-container__qualification--lamanu img{
     /* height: 400px; */

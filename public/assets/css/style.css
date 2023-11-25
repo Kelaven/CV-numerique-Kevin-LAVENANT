@@ -327,20 +327,6 @@ hr{
     height: 100%;
     width: 100%;
 }
-.hat__animate-js{ /* to get the call with JS */
-    /* background-image: url("../img/illustration-3d-chapeau-academique-test1.png");
-    background-size: 40%;
-    background-repeat: no-repeat; */
-}
-.laManu__animate-js{
-    /* background-image: url("../img/kisspng-digital-marketing-business-service-brand-computer-programming-5a6bfdde14d662.3969596715170267820854.png");
-    background-size: 45%;
-    background-repeat: no-repeat;
-    background-position: 110% 141% !important; */
-}
-/* .animate__animated.animate__backInLeft {
-    --animate-delay: 0.1s;
-  } */
 .logo-container__qualification__title{
     color: #6667AA;
     font-size: 30px;
@@ -362,7 +348,7 @@ hr{
 .logo-container__qualification--ifag, .logo-container__qualification--upjvlicence, .logo-container__qualification--upjvtc{
     background-image: url("../img/couronne-laurier-diplome-gold-transparent.png");
     background-size: 36%;
-    background-position: 50% 75%;;
+    background-position: 50% 85%;;
     background-repeat: no-repeat;
 }
 .logo-container__qualification--ifag img, .logo-container__qualification--upjvlicence img, .logo-container__qualification--upjvtc img{
@@ -373,6 +359,48 @@ hr{
     /* height: 400px; */
     position: relative;
     top: 110px;
+}
+.qualifications__boxes{
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+    background: #DDDDDD;
+}
+.qualifications__boxes--left{
+    border-top-left-radius: 30px;
+    box-shadow:  5px 5px 18px #bcbcbc,
+                -5px -5px 18px #fefefe;
+}
+.qualifications__boxes--right{
+    border-top-right-radius: 30px;
+    box-shadow:  -5px 5px 18px #bcbcbc,
+                5px -5px 18px #fefefe;
+}
+.qualifications__boxes--left2{
+    border-bottom-left-radius: 30px;
+    box-shadow:  5px -5px 18px #bcbcbc,
+                -5px 5px 18px #fefefe;
+}
+.qualifications__boxes--right2{
+    border-bottom-right-radius: 30px;
+    box-shadow:  -5px -5px 18px #bcbcbc,
+                5px 5px 18px #fefefe;
+}
+.qualifications__boxes--mobile1{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow:  5px 5px 18px #bcbcbc,
+                -10px -10px 18px #fefefe;
+}
+.qualifications__boxes--mobile2{
+    box-shadow:  50px 0px 20px #bcbcbc,
+    -50px -0px 20px #bcbcbc;
+}
+.qualifications__boxes--mobile3{
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow:  -5px -5px 18px #bcbcbc,
+                10px 10px 18px #fefefe;
 }
 /*! portfolio */
 .box-portfolio{

@@ -2,10 +2,6 @@
 html body{
     background-color: #FCFCFC;
 }
-h4{
-    color: #6667AA;
-}
-
 
 /***! navbar ***/
 .navbar{
@@ -313,11 +309,39 @@ hr{
 .qualifications{
     min-height: 90vh;
 }
+.qualifications p{
+    font-family: 'Roboto', sans-serif;
+}
+.qualifications img:first-of-type{
+    width: 80%;
+}
 .logo-container__qualification{
     width: 450px;
     height: 300px;
     padding: 20px;
     cursor: default; /* delete the cursor's magnifying glass */
+}
+.qualification__img{
+    height: 110px;
+    width: 140px !important;
+    top: -40px;
+    left: 25px;
+}
+.qualification__img--mobile{
+    height: 85px;
+    width: 105px !important;
+    padding-top: 5px;
+}
+.qualification__img--mobile--4{
+    margin-top: 15px;
+}
+@media screen and (min-width: 770px) and (max-width: 990px) {
+    .qualification__img{
+        height: 90px;
+        width: 120px !important;
+        top: -35px;
+        left: 0px;
+    }
 }
 .logo-container__qualification:hover{
     transform: none; /* delete scale animation */
@@ -334,9 +358,12 @@ hr{
     padding-top: 20px;
     height: 40%;
 }
-.logo-container__qualification__img{
-    /* padding-right: 300px; */
-}
+
+/* .qualification__img__div{
+background-color: red;
+position: absolute;
+right: 32vw;
+} */
 .logo-container__qualification__text--replace{
     height: 50px;
     padding-top: 13.5vh;

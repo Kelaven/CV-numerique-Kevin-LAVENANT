@@ -190,9 +190,12 @@ hr{
 .modal-content__btn-close{
     float: right;
 }
+.modal--tallword{
+    font-weight: bold;
+}
 
 /*! experiences */
-.experiences{
+#experiences{
     min-height: 100vh;
 }
 .box-timeline{
@@ -443,9 +446,13 @@ right: 32vw;
 .box-portfolio p{
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
     padding: 2% 2%;
+}
+.portfolio__links{
+    color: #fff;
+    font-weight: bolder;
 }
 /* to animate the text apparition : */
 .box-portfolio--appear{

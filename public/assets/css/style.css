@@ -25,8 +25,6 @@ html body{
 }
 
 /***! header ***/
-
-
 @media screen and (max-width: 1024px) { /* to be responsive at tablet */
     header{
         min-height: 72vh;
@@ -148,6 +146,7 @@ hr{
     }
 }
 
+
 /***! main ***/
 
 /*! skills */
@@ -168,9 +167,7 @@ hr{
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     background: #DDDDDD;
-    box-shadow:  /* 20px 20px 60px #bcbcbc,
-            -20px -20px 60px #fefefe; */
-            5px 5px 20px #bcbcbc,
+    box-shadow: 5px 5px 20px #bcbcbc,
             -5px -5px 20px #fefefe;
     transition: transform .5s;
     cursor: url("../img/icon-zoom-in.png"), zoom-in;
@@ -265,7 +262,6 @@ hr{
 .box-timeline__box--b1{
     top: 0px;
     left: calc(50% - 280px);
-    /* left: calc(50% - 318px); */
 }
 .box-timeline__box--b2{
     top: 313px;
@@ -304,7 +300,6 @@ hr{
     box-shadow: 4px 4px 9px #c6c6c6,
                 -4px -4px 9px #fff;
     padding: 20px;
-    /* width: 350px; */
     max-width: 100%;
 }
 
@@ -318,12 +313,12 @@ hr{
 .qualifications img:first-of-type{
     width: 80%;
 }
-.logo-container__qualification{
+/* .logo-container__qualification{
     width: 450px;
     height: 300px;
     padding: 20px;
-    cursor: default; /* delete the cursor's magnifying glass */
-}
+    cursor: default;
+} */
 .qualification__img{
     height: 110px;
     width: 140px !important;
@@ -345,50 +340,6 @@ hr{
         top: -35px;
         left: 0px;
     }
-}
-.logo-container__qualification:hover{
-    transform: none; /* delete scale animation */
-}
-.hat__container, #hat__container__animate-js--laManu{
-    /* size the div to mouseover in JS into all the container */
-    height: 100%;
-    width: 100%;
-}
-.logo-container__qualification__title{
-    color: #6667AA;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 20px;
-    height: 40%;
-}
-
-/* .qualification__img__div{
-background-color: red;
-position: absolute;
-right: 32vw;
-} */
-.logo-container__qualification__text--replace{
-    height: 50px;
-    padding-top: 13.5vh;
-    width: 350px;
-    font-family: 'Roboto', sans-serif;
-    /* text-transform: uppercase; */
-    font-size: 0.95em;
-}
-.logo-container__qualification--ifag, .logo-container__qualification--upjvlicence, .logo-container__qualification--upjvtc{
-    background-image: url("../img/couronne-laurier-diplome-gold-transparent.png");
-    background-size: 36%;
-    background-position: 50% 85%;;
-    background-repeat: no-repeat;
-}
-.logo-container__qualification--ifag img, .logo-container__qualification--upjvlicence img, .logo-container__qualification--upjvtc img{
-    height: 120px;
-    
-}
-.logo-container__qualification--lamanu img{
-    /* height: 400px; */
-    position: relative;
-    top: 110px;
 }
 .qualifications__boxes{
     width: 450px;
@@ -455,7 +406,7 @@ right: 32vw;
     font-weight: bolder;
 }
 /* to animate the text apparition : */
-.box-portfolio--appear{
+.box-portfolio--appear{ /* class for JS */
     animation: slideUp 1s;    
 }
 @keyframes slideUp {
@@ -497,8 +448,8 @@ right: 32vw;
     background-position: 50%;
 }
 
-/*! recommendations */
 
+/*! recommendations */
 @media screen and (max-width: 375px){
     #recommandations__section{
         height: 100vh;
@@ -518,7 +469,6 @@ right: 32vw;
     top: 350px;
 }
 .title__carosel{
-    /* padding-left: 130px; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 22px;
@@ -527,9 +477,6 @@ right: 32vw;
 .content__carosel{
     padding: 40px 130px;
     font-family: 'Roboto', sans-serif;
-}
-.title__carosel--little{
-    /* padding: 0px 150px 70px; */
 }
 .content__carosel--litle{
     padding: 40px 180px;
@@ -564,12 +511,9 @@ right: 32vw;
     position: absolute;
     top: 50px;
 }
-.carousel-control-prev-icon{
-}
 
 
 /* ! footer */
-
 footer{
     height: 30vh;
     position: relative;
@@ -579,15 +523,3 @@ footer{
     top: 60% !important;
     max-width: 80%;
 }
-
-
-/*? test de photo de profil */
-/* .phototestcontainer{
-    height: 300px;
-    width: 450px;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    background-image: url('/public/assets/img/profile-picture-kevin-lavenant.jpg');
-    background-position: center;
-    background-size: cover;
-} */

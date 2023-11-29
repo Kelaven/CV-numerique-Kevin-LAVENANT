@@ -92,30 +92,3 @@ stagger : {  // decalage time between each logos, so I create object. Thanks to 
 }
 }))
 .addTo(controller2);
-
-
-
-
-// ? Event to animate the hat into the qualifications' containers
-// document.addEventListener("DOMContentLoaded", () => { // add event with DOMContentLoaded to make sure the script works if the DOM is correctly charged (to avoid animation bugs)
-//     animateHats.forEach(animateHat => {
-//         animateHat.addEventListener("mousemove", function appearAtOver(e) {
-//             const idAppear = e.target.id;
-//             console.log(idAppear);
-//             const idAppear1 = document.querySelector(`[data-anim-hat="${idAppear}"]`);
-//             console.log(idAppear1);
-//             if (idAppear1) {
-//                 idAppear1.classList.add('hat__animate-js', 'animate__animated', 'animate__backInLeft'); // to animate at mouse move with the CSS class and animate.style CDN
-//             }
-//         });
-//     });
-// });
-
-// ? Event to animate LaManu container
-// animateLaManu.addEventListener("mousemove", () => {
-//     animateLaManu.classList.add('laManu__animate-js', 'animate__animated', 'animate__backInUp');
-// });
-
-
-
-

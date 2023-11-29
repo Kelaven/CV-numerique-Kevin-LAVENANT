@@ -170,7 +170,7 @@ hr{
     box-shadow: 5px 5px 20px #bcbcbc,
             -5px -5px 20px #fefefe;
     transition: transform .5s;
-    cursor: url("../img/icon-zoom-in.png"), zoom-in;
+    cursor: url("/public/assets/img/icon-zoom-in.png"), zoom-in !important;;
 }
 .logo-container:hover{
     transform: scale(1.1);

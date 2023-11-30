@@ -32,7 +32,7 @@ html body{
 }
 @media screen and (min-width: 1025px) {
     header{
-        min-height: 92vh;
+        min-height: 93vh;
         /* height: 100vh; */
     }
 }

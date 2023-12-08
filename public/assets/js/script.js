@@ -11,9 +11,7 @@ const appearsTextsContainers = document.querySelectorAll(".box-portfolio");
 const footerLogos = document.querySelectorAll(".footer-logos")
 const controller2 = new ScrollMagic.Controller();
 const triggerHTML = document.getElementById("footer__title");
-// ? to qualifications :
-// const animateHats = document.querySelectorAll(".hat__container"); // to select the qualification's container (HTML)
-// const animateLaManu = document.getElementById("hat__container__animate-js--laManu");
+
 
 
 // ! Events

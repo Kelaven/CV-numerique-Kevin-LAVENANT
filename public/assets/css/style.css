@@ -318,7 +318,7 @@ hr{
 }
 .qualifications img:first-of-type{
     width: 60%;
-    opacity: 0.8 !important;
+    opacity: 0.7 !important;
 }
 @media (max-width: 768px) {
     .qualifications img:first-of-type{
@@ -330,7 +330,7 @@ hr{
     width: 100px !important;
     top: -25px;
     left: 45px;
-    opacity: 0.8 !important;
+    opacity: 0.7 !important;
 }
 .qualification__img--mobile{
     height: 60px;

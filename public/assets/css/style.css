@@ -467,7 +467,7 @@ hr{
 }
 @media screen and (min-width: 376px) and (max-width: 768px){
     #recommandations__section{
-        min-height: 80vh;
+        min-height: 84vh;
     }
 } 
 @media screen and (min-width: 768px) and (max-width: 1024px){
